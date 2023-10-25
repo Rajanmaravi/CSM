@@ -1,0 +1,17 @@
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Repository.deps.json
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.csproj.AssemblyReference.cache
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.AssemblyInfoInputs.cache
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.AssemblyInfo.cs
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.csproj.CoreCompileInputs.cache
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.csproj.CopyComplete
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.dll
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\refint\Csm.JseFeedback.Repository.dll
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Repository\obj\Debug\net6.0\ref\Csm.JseFeedback.Repository.dll
