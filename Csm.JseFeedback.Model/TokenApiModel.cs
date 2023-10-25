@@ -8,6 +8,7 @@ namespace Csm.JseFeedback.Model
 {
     public class TokenApiModel
     {
+        //Adeed comment
         public string? AccessToken { get; set; }
         public string? RefreshToken { get; set; }
     }
