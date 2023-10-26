@@ -11,7 +11,8 @@ namespace Csm.JseFeedback.Model
     {
         [Required]
         public string TechnologyName { get; set; }
-          
 
+        [Required]
+        public string TechnologyCode { get; set; }
     }
 }

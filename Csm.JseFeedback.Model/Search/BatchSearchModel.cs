@@ -8,7 +8,6 @@ namespace Csm.JseFeedback.Model
 {
     public class BatchSearchModel
     {
-        public int? Id { get; set; }
         public string? BatchCode { get; set; }
         public string? Year { get; set; }
         public string? Month { get; set; }

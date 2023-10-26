@@ -21,8 +21,9 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Add_FeedbackDetails";
                 var parameters = new DynamicParameters();
+                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedback.FeedbackName, DbType.String, ParameterDirection.Input);
-                parameters.Add("@loggedInUser", feedback.loggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", feedback.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
                 {
@@ -42,8 +43,8 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Delete_Feedback";
                 var parameters = new DynamicParameters();
-                parameters.Add("@FeedbackId", feedback.Id, DbType.Int32, ParameterDirection.Input);
-                parameters.Add("@loggedInUser", feedback.loggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", feedback.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
                 {
@@ -78,7 +79,7 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Search_Feedback";
                 var parameters = new DynamicParameters();
-                parameters.Add("@FeedbackId", feedbackSearch.FeedbackId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@FeedbackCode", feedbackSearch.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedbackSearch.FeedbackName, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
@@ -99,10 +100,10 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Update_Feedback";
                 var parameters = new DynamicParameters();
-                parameters.Add("@FeedbackId", feedback.Id, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@IsActive", feedback.IsActive, DbType.Boolean, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedback.FeedbackName, DbType.String, ParameterDirection.Input);
-                parameters.Add("@loggedInUser", feedback.loggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", feedback.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
                 {

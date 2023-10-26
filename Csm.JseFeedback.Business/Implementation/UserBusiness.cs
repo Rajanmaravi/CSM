@@ -35,7 +35,7 @@ namespace Csm.JseFeedback.Business
             throw new NotImplementedException();
         }
 
-        public Task<string> SearchUser(UserSearchModel userSearch)
+        public Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch)
         {
             throw new NotImplementedException();
         }

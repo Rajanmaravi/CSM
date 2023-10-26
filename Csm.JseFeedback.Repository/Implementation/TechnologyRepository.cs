@@ -21,8 +21,9 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Add_TechnologyDetails";
                 var parameters = new DynamicParameters();
+                parameters.Add("@TechnologyCode", technology.TechnologyCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@TechnologyName", technology.TechnologyName, DbType.String, ParameterDirection.Input);
-                parameters.Add("@loggedInUser", technology.loggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", technology.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
                 {
@@ -42,8 +43,8 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Delete_Technology";
                 var parameters = new DynamicParameters();
-                parameters.Add("@TechnologyId", technology.Id, DbType.Int32, ParameterDirection.Input);
-                parameters.Add("@loggedInUser", technology.loggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@TechnologyCode", technology.TechnologyCode, DbType.VarNumeric, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", technology.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
                 {
@@ -78,7 +79,7 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Search_Technology";
                 var parameters = new DynamicParameters();
-                parameters.Add("@TechnologyId", technologySearch.TechnologyId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@TechnologyCode", technologySearch.TechnologyCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@TechnologyName", technologySearch.TechnologyName, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
@@ -99,10 +100,10 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Update_Technology";
                 var parameters = new DynamicParameters();
-                parameters.Add("@TechnologyId", technology.Id, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@TechnologyCode", technology.TechnologyCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@IsActive", technology.IsActive, DbType.Boolean, ParameterDirection.Input);
                 parameters.Add("@TechnologyName", technology.TechnologyName, DbType.String, ParameterDirection.Input);
-                parameters.Add("@loggedInUser", technology.loggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", technology.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
                 {

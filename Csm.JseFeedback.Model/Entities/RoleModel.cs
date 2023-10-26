@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Csm.JseFeedback.Model
 {
-    public class UserSearchModel
+    public class RoleModel:BaseEntityModel
     {
-        public string? EmployeeCode { get; set; }
-                public string ? Name { get; set; }
+        public string RoleCode { get; set; }
+        public string Description { get; set; }
+
     }
 }

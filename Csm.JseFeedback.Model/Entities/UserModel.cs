@@ -17,8 +17,10 @@ namespace Csm.JseFeedback.Model
         public string LastName     { get; set; }
         public string? MiddleName { get; set; }
         public string? RefreshToken { get; set; }
-        public string? RefreshTokenExpiresOn { get; set; }
+        public DateTime? RefreshTokenExpiresOn { get; set; }
         public string ? Password { get; set; }
+        public int RoleId { get; set; }
+        public string UserRole { get; set; }
 
     }
 }

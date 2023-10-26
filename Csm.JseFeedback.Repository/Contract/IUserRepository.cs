@@ -13,7 +13,7 @@ namespace Csm.JseFeedback.Repository
         Task<string> AddUser(UserModel userModel);
         Task<string> UpdateUser(UserModel userModel);
         Task<string> DeleteUser(UserModel userModel);
-        Task<string> SearchUser(UserSearchModel userSearch);
+        Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch);
         Task<string> ChangePassword(PasswordChangeModel passwordChange);
         Task<string> UpdateRefreshToken(UserModel userModel);
 

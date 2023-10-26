@@ -8,7 +8,7 @@ namespace Csm.JseFeedback.Model.Search
 {
     public class FeedbackSearchModel
     {
-        public int? @FeedbackId { get; set; }
+        public string? FeedbackCode { get; set; }
         public string? FeedbackName { get; set; }
     }
 }

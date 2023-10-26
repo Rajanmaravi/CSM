@@ -19,7 +19,7 @@ namespace Csm.JseFeedback.Api.Controllers
         private readonly IConfiguration _configuration;
         private readonly IUserBusiness _userBusiness;
 
-        public AuthController(ITokenService tokenService,IConfiguration configuration,IUserBusiness userBusiness)
+        public AuthController(ITokenService tokenService, IConfiguration configuration, IUserBusiness userBusiness)
         {
             _tokenService = tokenService ?? throw new ArgumentNullException(nameof(tokenService));
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
@@ -29,30 +29,38 @@ namespace Csm.JseFeedback.Api.Controllers
         }
 
         [HttpPost, Route("login")]
-        public IActionResult Login([FromBody] TokenRequest tokenRequest)
+        public async Task<IActionResult> Login([FromBody] TokenRequest tokenRequest)
         {
-            if (tokenRequest is null  || string.IsNullOrEmpty(tokenRequest.UserName) || string.IsNullOrEmpty(tokenRequest.Password))
+            if (tokenRequest is null || string.IsNullOrEmpty(tokenRequest.UserName) || string.IsNullOrEmpty(tokenRequest.Password))
             {
                 return BadRequest("Invalid client request");
             }
-            if (!tokenRequest.UserName.Equals(_configuration["Jwt:userName"].ParseToText()) || !tokenRequest.Password.Equals(_configuration["Jwt:password"].ParseToText()))                        
+            var userDetails = await _userBusiness.ValidateUser(new LoginModel { EmployeeCode = tokenRequest.UserName, Password = tokenRequest.Password });
+
+            if (userDetails == null)
+                return Unauthorized();
+
+            if (!tokenRequest.UserName.Equals(_configuration["Jwt:userName"].ParseToText()) || !tokenRequest.Password.Equals(_configuration["Jwt:password"].ParseToText()))
                 return Unauthorized();
 
             var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, tokenRequest.UserName)
+            new Claim(ClaimTypes.Name, userDetails.EmployeeCode)
             //,new Claim(ClaimTypes.Role, "Manager")
         };
             var accessToken = _tokenService.GenerateAccessToken(claims);
             var refreshToken = _tokenService.GenerateRefreshToken();
             TokenResponse response = new TokenResponse
             {
-                Token=accessToken,
-                RefreshToken=refreshToken,
+                Token = accessToken,
+                RefreshToken = refreshToken,
                 DateOfExpiry = DateTime.Now.AddHours(_configuration["Jwt:TokenValidityInHours"].ParseInt()),
                 RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt())
-        };
-        return Ok(response);
+            };
+            userDetails.RefreshToken = response.RefreshToken;
+            userDetails.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
+            _userBusiness.UpdateRefreshToken(userDetails);
+            return Ok(response);
         }
     }
 }

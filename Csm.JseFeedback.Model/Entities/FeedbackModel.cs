@@ -15,6 +15,11 @@ namespace Csm.JseFeedback.Model
         {
             get; set;
         }
+        [Required]
+        public string FeedbackCode
+        {
+            get;set;
+        }
     }
 }
 

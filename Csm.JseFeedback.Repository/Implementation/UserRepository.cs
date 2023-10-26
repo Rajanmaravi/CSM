@@ -14,34 +14,137 @@ namespace Csm.JseFeedback.Repository
     {
         public UserRepository(CsmDbContext dbContext, ILogger<UserRepository> logger):base(dbContext,logger) { }
 
-        public Task<string> AddUser(UserModel userModel)
+        public async Task<string> AddUser(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var procedureName = "USP_Add_UserDetails";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
+                parameters.Add("@FirstName", userModel.FirstName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LastName", userModel.LastName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Password", userModel.Password, DbType.String, ParameterDirection.Input);
+                parameters.Add("@MiddleName", userModel.MiddleName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserRepository.AddUser");
+                throw;
+            }
         }
 
-        public Task<string> ChangePassword(PasswordChangeModel passwordChange)
+        public async Task<string> ChangePassword(PasswordChangeModel passwordChangeModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var procedureName = "USP_Update_User_Password";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", passwordChangeModel.EmployeeCode, DbType.String, ParameterDirection.Input);
+                parameters.Add("@OldPassword", passwordChangeModel.OldPassword, DbType.String, ParameterDirection.Input);
+                parameters.Add("@NewPassword", passwordChangeModel.NewPassword, DbType.String, ParameterDirection.Input);
+                parameters.Add("@ConfirmPassword", passwordChangeModel.ConfirmPassword, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", passwordChangeModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserRepository.ChangePassword");
+                throw;
+            }
         }
 
-        public Task<string> DeleteUser(UserModel userModel)
+        public async Task<string> DeleteUser(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var procedureName = "USP_Delete_UserDetails";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
+                       parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserRepository.DeleteUser");
+                throw;
+            }
         }
 
-        public Task<string> SearchUser(UserSearchModel userSearch)
+        public async Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var procedureName = "USP_Search_UserDetail";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", userSearch.EmployeeCode, DbType.VarNumeric, ParameterDirection.Input);
+                parameters.Add("@EmployeeName", userSearch.Name, DbType.String, ParameterDirection.Input);
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return connection.Query<UserModel>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception FeedbackRepository.SearchUser");
+                throw;
+            }
         }
 
-        public Task<string> UpdateRefreshToken(UserModel userModel)
+        public async Task<string> UpdateRefreshToken(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var procedureName = "USP_Update_User_AccessToken";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
+                parameters.Add("@RefreshToken", userModel.RefreshToken, DbType.String, ParameterDirection.Input);
+                parameters.Add("@RefreshTokenExpiresOn", userModel.RefreshTokenExpiresOn, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserRepository.UpdateRefreshToken");
+                throw;
+            }
         }
 
-        public Task<string> UpdateUser(UserModel userModel)
+        public async Task<string> UpdateUser(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var procedureName = "USP_Update_UserDetail";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
+                parameters.Add("@FirstName", userModel.FirstName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@MiddleName", userModel.MiddleName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LastName", userModel.LastName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@IsActive", userModel.IsActive, DbType.Boolean, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserRepository.UpdateUser");
+                throw;
+            }
         }
 
         public async Task<UserModel> ValidateUser(LoginModel loginModel)

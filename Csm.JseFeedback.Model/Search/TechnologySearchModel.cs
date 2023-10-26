@@ -8,7 +8,7 @@ namespace Csm.JseFeedback.Model
 {
     public class TechnologySearchModel
     {
-        public int? TechnologyId { get; set; }
+        public string TechnologyCode { get; set; }
         public string? TechnologyName { get; set; }
     }
 }

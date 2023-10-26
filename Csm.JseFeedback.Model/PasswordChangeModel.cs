@@ -8,9 +8,10 @@ namespace Csm.JseFeedback.Model
 {
     public class PasswordChangeModel
     {
-        public string UserCode { get; set; }
+        public string EmployeeCode { get; set; }
         public string OldPassword { get; set; }
         public string NewPassword { get; set; }
         public string ConfirmPassword { get; set; }
+        public string LoggedInUser { get; set; }
     }
 }
