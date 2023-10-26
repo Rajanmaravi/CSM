@@ -17,11 +17,14 @@ namespace Csm.JseFeedback.Api.Controllers
     {
         private readonly ITokenService _tokenService;
         private readonly IConfiguration _configuration;
+        private readonly IUserBusiness _userBusiness;
 
-        public AuthController(ITokenService tokenService,IConfiguration configuration)
+        public AuthController(ITokenService tokenService,IConfiguration configuration,IUserBusiness userBusiness)
         {
             _tokenService = tokenService ?? throw new ArgumentNullException(nameof(tokenService));
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+            _userBusiness = userBusiness ?? throw new ArgumentNullException(nameof(userBusiness));
+
 
         }
 

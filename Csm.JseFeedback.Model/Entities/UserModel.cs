@@ -9,13 +9,16 @@ namespace Csm.JseFeedback.Model
 {
     public class UserModel:BaseEntityModel
     {
-            [Required]
-            public string EmployeeCode { get; set; }
+        [Required]
+        public string EmployeeCode { get; set; }
         [Required]
         public string FirstName    { get; set; }
         [Required]
         public string LastName     { get; set; }
-           public string? MiddleName { get; set; }
+        public string? MiddleName { get; set; }
+        public string? RefreshToken { get; set; }
+        public string? RefreshTokenExpiresOn { get; set; }
+        public string ? Password { get; set; }
 
     }
 }

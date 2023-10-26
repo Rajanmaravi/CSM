@@ -10,6 +10,12 @@ namespace Csm.JseFeedback.Business
     public interface IUserBusiness
     {
         Task<UserModel> ValidateUser(LoginModel loginModel);
-     
+        Task<string> AddUser(UserModel userModel);
+        Task<string> UpdateUser(UserModel userModel);
+        Task<string> DeleteUser(UserModel userModel);
+        Task<string> SearchUser(UserSearchModel userSearch);
+        Task<string> ChangePassword(PasswordChangeModel passwordChange);
+        Task<string> UpdateRefreshToken(UserModel userModel);
+
     }
 }
