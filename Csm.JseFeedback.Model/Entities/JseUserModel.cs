@@ -11,7 +11,7 @@ namespace Csm.JseFeedback.Model
     public class JseUserModel:BaseEntityModel
     {
         [Required]
-        public string JseCode { get; set; }
+        public string EmployeeCode { get; set; }
         [Required]
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
@@ -31,5 +31,7 @@ namespace Csm.JseFeedback.Model
         public string PmEmail     { get; set; }
         public string? Location    { get; set; }
         public string? ProjectName { get; set; }
+        public int? BatchId { get; set; }
+        public int? TechnologyId { get; set; }
     }
 }

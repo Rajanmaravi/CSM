@@ -9,11 +9,11 @@ namespace Csm.JseFeedback.Repository
 {
     public interface IJseRepository
     {
-        Task<IList<JseUserModel>> SearchJseList(JseSearchModel jseSearch);
-        Task<JseUserModel> GetJseDetails(JseSearchModel jseSearch);
-        Task<bool> AddJse(JseUserModel jseUser);
-        Task<bool> UpdateJse(JseUserModel jseUser);
-        Task<bool> DeleteJse(int jseId);
-        Task<bool> AddJseToBatch(JseUserModel jseUser);
+        //Task<IList<JseUserModel>> SearchJseList(JseSearchModel jseSearch);
+        //Task<JseUserModel> GetJseDetails(JseSearchModel jseSearch);
+        Task<string> AddJseInformation(JseUserModel jseUser);
+        Task<string> UpdateJseInformation(JseUserModel jseUser);
+        Task<string> DeleteJseInformation(JseUserModel jseUser);
+        //Task<bool> AddJseToBatch(JseUserModel jseUser);
     }
 }
