@@ -18,7 +18,10 @@ namespace Csm.JseFeedback.Api
             .AddTransient<ITechnologyRepository, TechnologyRepository>()
             .AddTransient<IFeedbackBusiness, FeedbackBusiness>()
             .AddTransient<IFeedbackRepository, FeedbackRepository>()
-            .AddTransient<ITokenService, TokenService>();
+            .AddTransient<ITokenService, TokenService>()
+            .AddTransient<IRoleBusiness, RoleBusiness>()
+            .AddTransient<IRoleRepository, RoleRepository>();
+
         }
     }
 }
