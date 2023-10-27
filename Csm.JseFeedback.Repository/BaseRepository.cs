@@ -14,8 +14,8 @@ namespace Csm.JseFeedback.Repository
         protected readonly ILogger<BaseRepository> _logger;
         public BaseRepository(CsmDbContext dbContext,ILogger<BaseRepository> logger)
         {
-            _dbContext = dbContext;
-            _logger = logger;
+            _dbContext = dbContext??throw new ArgumentNullException(nameof(dbContext));
+            _logger = logger??throw new ArgumentNullException(nameof(logger));
         }
     }
 }

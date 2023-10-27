@@ -17,7 +17,7 @@ namespace Csm.JseFeedback.Business
         private readonly IUserRepository _userRepository;
         public UserBusiness(ILogger<UserBusiness> logger, IUserRepository userRepository) :base(logger) 
         {
-            _userRepository = userRepository;
+            _userRepository = userRepository??throw new ArgumentNullException(nameof(userRepository));
         }
 
         public async Task<string> AddUser(UserModel userModel)

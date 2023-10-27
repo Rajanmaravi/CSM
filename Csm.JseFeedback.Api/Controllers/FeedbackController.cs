@@ -16,12 +16,8 @@ namespace Csm.JseFeedback.Api.Controllers
 
         public FeedbackController(ILogger<FeedbackController> logger, IFeedbackBusiness feedbackBusiness):base(logger)
         {
-            _feedbackBusiness = feedbackBusiness;
-            //_feedbackBusiness.AddFeedback
-            ////_feedbackBusiness.UpdateFeedback
-            ////_feedbackBusiness.DeleteFeedback
-            ////_feedbackBusiness.SearchFeedbacks
-            //_feedbackBusiness.GetFeedback
+            _feedbackBusiness = feedbackBusiness??throw new ArgumentNullException(nameof(feedbackBusiness));
+           
         }
         [HttpPost("Create")]
         public async Task<IActionResult> Create(FeedbackModel feedbackModel)
@@ -39,7 +35,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch(Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in FeedbackController.Create {ex}");
             }
             return BadRequest("The feedback could not be created with the given parameters. Please try again.");
         }
@@ -59,7 +55,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in FeedbackController.Update {ex}");
             }
             return BadRequest("The feedback could not be Update with the given parameters. Please try again.");
         }
@@ -79,7 +75,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in FeedbackController.Delete {ex}");
             }
             return BadRequest("The feedback could not be Update with the given parameters. Please try again.");
         }
@@ -94,7 +90,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in FeedbackController.Search {ex}");
             }
             return BadRequest("Unable to fetch the list of Feedbacks.");
 
@@ -110,7 +106,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in FeedbackController.Get {ex}");
             }
             return BadRequest("Unable to fetch the requested feedback.");
 

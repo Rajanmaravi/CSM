@@ -17,7 +17,7 @@ namespace Csm.JseFeedback.Repository
         private readonly string _connectionString;
         public CsmDbContext(IConfiguration configuration)
         {
-            _configuration = configuration;
+            _configuration = configuration??throw new ArgumentNullException(nameof(configuration));
             _connectionString = _configuration["ConnectionString:SqlConnetion"].ParseToText();
         }
         public IDbConnection CreateConnection()

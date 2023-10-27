@@ -17,7 +17,7 @@ namespace Csm.JseFeedback.Api.Controllers
 
         public RoleController(ILogger<RoleController> logger, IRoleBusiness roleBusiness) :base(logger)
         {
-            _roleBusiness = roleBusiness;
+            _roleBusiness = roleBusiness??throw new ArgumentNullException(nameof(roleBusiness));
         }
         [HttpPost("Create")]
         public async Task<IActionResult> Create(RoleModel roleModel)
@@ -35,7 +35,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch(Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in RoleController.Create {ex}");
             }
             return BadRequest("The Role could not be created with the given parameters. Please try again.");
         }
@@ -55,7 +55,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in RoleController.Update {ex}");
             }
             return BadRequest("The Role could not be Update with the given parameters. Please try again.");
         }
@@ -75,7 +75,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in RoleController.Delete {ex}");
             }
             return BadRequest("The Role could not be Update with the given parameters. Please try again.");
         }
@@ -90,7 +90,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in RoleController.Search {ex}");
             }
             return BadRequest("Unable to fetch the list of Technologies.");
 

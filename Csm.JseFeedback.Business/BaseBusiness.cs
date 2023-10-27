@@ -13,7 +13,7 @@ namespace Csm.JseFeedback.Business
         protected readonly ILogger<BaseBusiness> _logger;
         public BaseBusiness(ILogger<BaseBusiness> logger)
         {
-            _logger = logger;
+            _logger = logger??throw new ArgumentNullException(nameof(logger));
         }
     }
 }

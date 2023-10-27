@@ -15,7 +15,7 @@ namespace Csm.JseFeedback.Repository
     public class TechnologyBusiness :BaseBusiness, ITechnologyBusiness
     {
         private ITechnologyRepository _technologyRepository;
-        public TechnologyBusiness(ILogger<TechnologyBusiness> logger,ITechnologyRepository technologyRepository):base(logger) { _technologyRepository = technologyRepository; }
+        public TechnologyBusiness(ILogger<TechnologyBusiness> logger,ITechnologyRepository technologyRepository):base(logger) { _technologyRepository = technologyRepository??throw new ArgumentNullException(nameof(technologyRepository)); }
 
         public async Task<string> AddTechnology(TechnologyModel technology)
         {

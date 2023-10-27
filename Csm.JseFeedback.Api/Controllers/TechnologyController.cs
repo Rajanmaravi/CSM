@@ -17,12 +17,8 @@ namespace Csm.JseFeedback.Api.Controllers
 
         public TechnologyController(ILogger<FeedbackController> logger, ITechnologyBusiness technologyBusiness) :base(logger)
         {
-            _technologyBusiness = technologyBusiness;
-            //_feedbackBusiness.AddFeedback
-            ////_feedbackBusiness.UpdateFeedback
-            ////_feedbackBusiness.DeleteFeedback
-            ////_feedbackBusiness.SearchFeedbacks
-            //_feedbackBusiness.GetFeedback
+            _technologyBusiness = technologyBusiness??throw new ArgumentNullException(nameof(technologyBusiness));
+           
         }
         [HttpPost("Create")]
         public async Task<IActionResult> Create(TechnologyModel technologyModel)
@@ -40,7 +36,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch(Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in TechnologyController.Create {ex}");
             }
             return BadRequest("The Technology could not be created with the given parameters. Please try again.");
         }
@@ -60,7 +56,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in TechnologyController.Update {ex}");
             }
             return BadRequest("The Technology could not be Update with the given parameters. Please try again.");
         }
@@ -80,7 +76,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in TechnologyController.Delete {ex}");
             }
             return BadRequest("The Technology could not be Update with the given parameters. Please try again.");
         }
@@ -95,7 +91,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in TechnologyController.Search {ex}");
             }
             return BadRequest("Unable to fetch the list of Technologies.");
 
@@ -111,7 +107,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in ");
+                _logger.LogError($"Exception in TechnologyController.Get {ex}");
             }
             return BadRequest("Unable to fetch the requested Technology.");
 

@@ -14,7 +14,10 @@ namespace Csm.JseFeedback.Business
     public class BatchBusiness :BaseBusiness, IBatchBusiness
     {
         private readonly IBatchRepository _batchRepository;
-        public BatchBusiness(ILogger<BatchBusiness> logger, IBatchRepository batchRepository) :base(logger) { _batchRepository = batchRepository; }
+        public BatchBusiness(ILogger<BatchBusiness> logger, IBatchRepository batchRepository) :base(logger)
+        { 
+            _batchRepository = batchRepository??throw new ArgumentNullException(nameof(batchRepository)); 
+        }
 
         public async Task<string> AddBatch(BatchModel batchModel)
         {

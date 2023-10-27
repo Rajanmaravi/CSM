@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,7 +19,7 @@ namespace Csm.JseFeedback.Business
         private readonly IFeedbackRepository _feedbackRepository;
         public FeedbackBusiness(ILogger<FeedbackBusiness> logger,IFeedbackRepository feedbackRepository):base(logger) 
         {
-            _feedbackRepository = feedbackRepository;
+            _feedbackRepository = feedbackRepository??throw new ArgumentNullException(nameof(feedbackRepository));
         }
 
         public async Task<string> AddFeedback(FeedbackModel feedback)
