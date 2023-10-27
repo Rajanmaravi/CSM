@@ -20,34 +20,82 @@ namespace Csm.JseFeedback.Business
             _userRepository = userRepository;
         }
 
-        public Task<string> AddUser(UserModel userModel)
+        public async Task<string> AddUser(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _userRepository.AddUser(userModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.AddUser");
+                throw;
+            }
         }
 
-        public Task<string> ChangePassword(PasswordChangeModel passwordChange)
+        public async Task<string> ChangePassword(PasswordChangeModel passwordChange)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _userRepository.ChangePassword(passwordChange);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.ChangePassword");
+                throw;
+            }
         }
 
-        public Task<string> DeleteUser(UserModel userModel)
+        public async Task<string> DeleteUser(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _userRepository.DeleteUser(userModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.DeleteUser");
+                throw;
+            }
         }
 
-        public Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch)
+        public async Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _userRepository.SearchUser(userSearch);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.SearchUser");
+                throw;
+            }
         }
 
-        public Task<string> UpdateRefreshToken(UserModel userModel)
+        public async Task<string> UpdateRefreshToken(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _userRepository.UpdateRefreshToken(userModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.UpdateRefreshToken");
+                throw;
+            }
         }
 
-        public Task<string> UpdateUser(UserModel userModel)
+        public async Task<string> UpdateUser(UserModel userModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _userRepository.UpdateUser(userModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.UpdateRefreshToken");
+                throw;
+            }
         }
 
         public async Task<UserModel> ValidateUser(LoginModel loginModel)

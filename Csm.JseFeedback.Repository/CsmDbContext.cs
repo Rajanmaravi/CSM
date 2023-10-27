@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Csm.JseFeedback.Commonlibrary;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace Csm.JseFeedback.Repository
         public CsmDbContext(IConfiguration configuration)
         {
             _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("SqlConnection");
+            _connectionString = _configuration["ConnectionString:SqlConnetion"].ParseToText();
         }
         public IDbConnection CreateConnection()
             => new SqlConnection(_connectionString);

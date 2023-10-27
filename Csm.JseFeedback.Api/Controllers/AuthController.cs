@@ -18,49 +18,105 @@ namespace Csm.JseFeedback.Api.Controllers
         private readonly ITokenService _tokenService;
         private readonly IConfiguration _configuration;
         private readonly IUserBusiness _userBusiness;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(ITokenService tokenService, IConfiguration configuration, IUserBusiness userBusiness)
+        public AuthController(ITokenService tokenService, IConfiguration configuration, IUserBusiness userBusiness,ILogger<AuthController> logger)
         {
             _tokenService = tokenService ?? throw new ArgumentNullException(nameof(tokenService));
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _userBusiness = userBusiness ?? throw new ArgumentNullException(nameof(userBusiness));
-
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
         }
 
         [HttpPost, Route("login")]
         public async Task<IActionResult> Login([FromBody] TokenRequest tokenRequest)
         {
-            if (tokenRequest is null || string.IsNullOrEmpty(tokenRequest.UserName) || string.IsNullOrEmpty(tokenRequest.Password))
+            try
             {
-                return BadRequest("Invalid client request");
-            }
-            var userDetails = await _userBusiness.ValidateUser(new LoginModel { EmployeeCode = tokenRequest.UserName, Password = tokenRequest.Password });
+                if (tokenRequest is null || string.IsNullOrEmpty(tokenRequest.UserName) || string.IsNullOrEmpty(tokenRequest.Password))
+                {
+                    return BadRequest("Unable to generate access token.Invalid client request.");
+                }
+                var userDetails = await _userBusiness.ValidateUser(new LoginModel { EmployeeCode = tokenRequest.UserName, Password = tokenRequest.Password });
 
-            if (userDetails == null)
-                return Unauthorized();
+                if (userDetails == null)
+                    return BadRequest("Unable to generate access token.Invalid credentials!");
 
-            if (!tokenRequest.UserName.Equals(_configuration["Jwt:userName"].ParseToText()) || !tokenRequest.Password.Equals(_configuration["Jwt:password"].ParseToText()))
-                return Unauthorized();
-
-            var claims = new List<Claim>
+                var claims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, userDetails.EmployeeCode)
             //,new Claim(ClaimTypes.Role, "Manager")
         };
-            var accessToken = _tokenService.GenerateAccessToken(claims);
-            var refreshToken = _tokenService.GenerateRefreshToken();
+                var accessToken = _tokenService.GenerateAccessToken(claims);
+                var refreshToken = _tokenService.GenerateRefreshToken();
+                TokenResponse response = new TokenResponse
+                {
+                    Token = accessToken,
+                    RefreshToken = refreshToken,
+                    DateOfExpiry = DateTime.Now.AddHours(_configuration["Jwt:TokenValidityInHours"].ParseInt()),
+                    RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt())
+                };
+                userDetails.RefreshToken = response.RefreshToken;
+                userDetails.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
+                _userBusiness.UpdateRefreshToken(userDetails);
+                return Ok(response);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Exception while generating access token. {ex}");
+            }
+            return BadRequest("Unable to generate access token.");
+
+        }
+
+        [HttpPost]
+        [Route("RefreshToken")]
+        public async Task<IActionResult> Refresh(TokenApiModel tokenApiModel)
+        {
+            if (tokenApiModel is null)
+                return BadRequest("Invalid client request");
+
+            string accessToken = tokenApiModel.AccessToken;
+            string refreshToken = tokenApiModel.RefreshToken;
+
+            var principal = _tokenService.GetPrincipalFromExpiredToken(accessToken);
+            var username = principal.Identity.Name; //this is mapped to the Name claim by default
+
+            var users = await _userBusiness.SearchUser(new UserSearchModel { EmployeeCode = username });
+            if (users == null || users.Count() <= 0)
+                return BadRequest("Invalid client request");
+            var loggedInUser = users.FirstOrDefault();
+
             TokenResponse response = new TokenResponse
             {
-                Token = accessToken,
-                RefreshToken = refreshToken,
+                Token = _tokenService.GenerateAccessToken(principal.Claims),
+                RefreshToken = _tokenService.GenerateRefreshToken(),
                 DateOfExpiry = DateTime.Now.AddHours(_configuration["Jwt:TokenValidityInHours"].ParseInt()),
                 RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt())
             };
-            userDetails.RefreshToken = response.RefreshToken;
-            userDetails.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
-            _userBusiness.UpdateRefreshToken(userDetails);
+            loggedInUser.RefreshToken = response.RefreshToken;
+            loggedInUser.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
+            await _userBusiness.UpdateRefreshToken(loggedInUser);
+
             return Ok(response);
+        }
+
+        [HttpPost, Authorize]
+        [Route("Revoke")]
+        public async Task<IActionResult> Revoke()
+        {
+            var username = User.Identity.Name;
+
+            var users = await _userBusiness.SearchUser(new UserSearchModel { EmployeeCode = username });
+            if (users == null || users.Count() <= 0)
+                return BadRequest("Invalid client request");
+            var loggedInUser = users.FirstOrDefault();
+            loggedInUser.RefreshToken = null;
+            loggedInUser.RefreshTokenExpiresOn = null;
+            _userBusiness.UpdateRefreshToken(loggedInUser);
+
+            return NoContent();
         }
     }
 }

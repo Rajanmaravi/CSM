@@ -158,7 +158,8 @@ namespace Csm.JseFeedback.Repository
 
                 using (var connection = _dbContext.CreateConnection())
                 {
-                    return connection.ExecuteScalar<UserModel>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                    return await connection.QuerySingleOrDefaultAsync<UserModel>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+                    
                 }
             }
             catch (Exception ex)
