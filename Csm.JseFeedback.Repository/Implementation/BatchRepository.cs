@@ -18,7 +18,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_BatchDetails";
+                var procedureName = "USP_Add_Batch_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@BatchCode", batchModel.BatchCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@BatchName", batchModel.BatchName, DbType.String, ParameterDirection.Input);
@@ -44,7 +44,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Delete_BatchDetails";
+                var procedureName = "USP_Delete_Batch_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@BatchCode", batchModel.BatchCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@BatchName", batchModel.BatchName, DbType.String, ParameterDirection.Input);
@@ -107,7 +107,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Update_BatchDetails";
+                var procedureName = "USP_Update_Batch_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@BatchCode", batchModel.BatchCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@BatchName", batchModel.BatchName, DbType.String, ParameterDirection.Input);

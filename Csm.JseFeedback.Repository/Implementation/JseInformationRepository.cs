@@ -19,7 +19,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_JSEDetails";
+                var procedureName = "USP_Add_Jse_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", jseUser.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FirstName", jseUser.FirstName, DbType.String, ParameterDirection.Input);
@@ -54,7 +54,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Update_JSEDetails";
+                var procedureName = "USP_Update_Jse_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", jseUser.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FirstName", jseUser.FirstName, DbType.String, ParameterDirection.Input);
@@ -89,7 +89,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Delete_JSEDetails";
+                var procedureName = "USP_Delete_Jse_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", jseUser.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FirstName", jseUser.FirstName, DbType.String, ParameterDirection.Input);

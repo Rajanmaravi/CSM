@@ -18,7 +18,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_UserDetails";
+                var procedureName = "USP_Add_User_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FirstName", userModel.FirstName, DbType.String, ParameterDirection.Input);
@@ -65,7 +65,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Delete_UserDetails";
+                var procedureName = "USP_Delete_User_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
                        parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
@@ -85,7 +85,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Search_UserDetail";
+                var procedureName = "USP_Search_User_Detail";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", userSearch.EmployeeCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@EmployeeName", userSearch.Name, DbType.String, ParameterDirection.Input);
@@ -127,7 +127,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Update_UserDetail";
+                var procedureName = "USP_Update_User_Detail";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FirstName", userModel.FirstName, DbType.String, ParameterDirection.Input);
@@ -151,7 +151,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_ValidateUser";
+                var procedureName = "USP_Validate_User";
                 var parameters = new DynamicParameters();
                 parameters.Add("@UserCode", loginModel.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Password", loginModel.Password, DbType.String, ParameterDirection.Input);

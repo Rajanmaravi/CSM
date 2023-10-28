@@ -59,12 +59,12 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The feedback could not be Update with the given parameters. Please try again.");
         }
-        [HttpDelete("Delete")]
-        public async Task<IActionResult> Delete(string feedbackCode)
+        [HttpPost("Delete")]
+        public async Task<IActionResult> Delete(FeedbackModel feedbackModel)
         {
             try
             {
-                var deleteStatus = await _feedbackBusiness.DeleteFeedback(new FeedbackModel { FeedbackCode=feedbackCode});
+                var deleteStatus = await _feedbackBusiness.DeleteFeedback(feedbackModel);
                 if (!string.IsNullOrEmpty(deleteStatus))
                 {
                     if (deleteStatus.ToLower() != "success")

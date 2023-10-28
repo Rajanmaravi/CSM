@@ -19,7 +19,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_TechnologyDetails";
+                var procedureName = "USP_Add_Technology_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@TechnologyCode", technology.TechnologyCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@TechnologyName", technology.TechnologyName, DbType.String, ParameterDirection.Input);

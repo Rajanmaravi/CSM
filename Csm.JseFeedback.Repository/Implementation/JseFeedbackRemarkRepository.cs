@@ -19,7 +19,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_JSE_FeedbackRemarks";
+                var procedureName = "USP_Add_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
                 parameters.Add("@JSEId", jsefeedbackRemark.JSEId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
@@ -43,7 +43,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Delete_JSE_FeedbackRemarks";
+                var procedureName = "USP_Delete_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
                 parameters.Add("@JSEId", jsefeedbackRemark.JSEId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
@@ -67,7 +67,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Update_JSE_FeedbackRemarks";
+                var procedureName = "USP_Update_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
                 parameters.Add("@JSEId", jsefeedbackRemark.JSEId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);

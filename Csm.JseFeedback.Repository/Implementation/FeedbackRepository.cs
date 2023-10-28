@@ -19,7 +19,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_FeedbackDetails";
+                var procedureName = "USP_Add_Feedback_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedback.FeedbackName, DbType.String, ParameterDirection.Input);

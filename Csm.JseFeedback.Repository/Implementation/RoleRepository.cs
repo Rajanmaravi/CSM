@@ -18,7 +18,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_RoleDetails";
+                var procedureName = "USP_Add_Role_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@RoleCode", roleModel.RoleCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Description", roleModel.Description, DbType.String, ParameterDirection.Input);
@@ -41,7 +41,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Delete_RoleDetails";
+                var procedureName = "USP_Delete_Role_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@RoleCode", roleModel.RoleCode, DbType.String, ParameterDirection.Input);
                 using (var connection = _dbContext.CreateConnection())
@@ -79,7 +79,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Update_RoleDetails";
+                var procedureName = "USP_Update_Role_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@RoleCode", roleModel.RoleCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Description", roleModel.Description, DbType.String, ParameterDirection.Input);

@@ -60,12 +60,12 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The Technology could not be Update with the given parameters. Please try again.");
         }
-        [HttpDelete("Delete")]
-        public async Task<IActionResult> Delete(string technologyCode)
+        [HttpPost("Delete")]
+        public async Task<IActionResult> Delete(TechnologyModel technologyModel)
         {
             try
             {
-                var deleteStatus = await _technologyBusiness.DeleteTechnology(new TechnologyModel { TechnologyCode= technologyCode });
+                var deleteStatus = await _technologyBusiness.DeleteTechnology(technologyModel);
                 if (!string.IsNullOrEmpty(deleteStatus))
                 {
                     if (deleteStatus.ToLower() != "success")

@@ -59,12 +59,12 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The Role could not be Update with the given parameters. Please try again.");
         }
-        [HttpDelete("Delete")]
-        public async Task<IActionResult> Delete(string roleCode)
+        [HttpPost("Delete")]
+        public async Task<IActionResult> Delete(RoleModel roleModel)
         {
             try
             {
-                var deleteStatus = await _roleBusiness.DeleteRole(new RoleModel {RoleCode=roleCode });
+                var deleteStatus = await _roleBusiness.DeleteRole(roleModel);
                 if (!string.IsNullOrEmpty(deleteStatus))
                 {
                     if (deleteStatus.ToLower() != "success")
