@@ -15,7 +15,7 @@ namespace Csm.JseFeedback.Repository
         public JseUserRepository(CsmDbContext dbContext, ILogger<JseUserRepository> logger) : base(dbContext, logger) { }
 
 
-        public async Task<string> AddJseInformation(JseUserModel jseUser)
+        public async Task<string> AddJseInformation(JseUserDaoModel jseUser)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace Csm.JseFeedback.Repository
         }
 
 
-        public async Task<string> UpdateJseInformation(JseUserModel jseUser)
+        public async Task<string> UpdateJseInformation(JseUserDaoModel jseUser)
         {
             try
             {
@@ -85,7 +85,7 @@ namespace Csm.JseFeedback.Repository
         }
 
 
-        public async Task<string> DeleteJseInformation(JseUserModel jseUser)
+        public async Task<string> DeleteJseInformation(JseUserDaoModel jseUser)
         {
             try
             {

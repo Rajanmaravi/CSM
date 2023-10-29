@@ -15,7 +15,7 @@ namespace Csm.JseFeedback.Repository
     {
         public TechnologyRepository(CsmDbContext dbContext, ILogger<TechnologyRepository> logger):base(dbContext,logger) { }
 
-        public async Task<string> AddTechnology(TechnologyModel technology)
+        public async Task<string> AddTechnology(TechnologyDaoModel technology)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> DeleteTechnology(TechnologyModel technology)
+        public async Task<string> DeleteTechnology(TechnologyDaoModel technology)
         {
             try
             {
@@ -94,7 +94,7 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> UpdateTechnology(TechnologyModel technology)
+        public async Task<string> UpdateTechnology(TechnologyDaoModel technology)
         {
             try
             {

@@ -10,12 +10,12 @@ namespace Csm.JseFeedback.Repository
     public interface IUserRepository
     {
         Task<UserModel> ValidateUser(LoginModel loginModel);
-        Task<string> AddUser(UserModel userModel);
-        Task<string> UpdateUser(UserModel userModel);
-        Task<string> DeleteUser(UserModel userModel);
+        Task<string> AddUser(UserDaoModel userModel);
+        Task<string> UpdateUser(UserDaoModel userModel);
+        Task<string> DeleteUser(UserDaoModel userModel);
         Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch);
         Task<string> ChangePassword(PasswordChangeModel passwordChange);
-        Task<string> UpdateRefreshToken(UserModel userModel);
+        Task<string> UpdateRefreshToken(UserDaoModel userModel);
 
 
     }

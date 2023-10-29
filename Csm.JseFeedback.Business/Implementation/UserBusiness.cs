@@ -20,7 +20,7 @@ namespace Csm.JseFeedback.Business
             _userRepository = userRepository??throw new ArgumentNullException(nameof(userRepository));
         }
 
-        public async Task<string> AddUser(UserModel userModel)
+        public async Task<string> AddUser(UserDaoModel userModel)
         {
             try
             {
@@ -46,7 +46,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> DeleteUser(UserModel userModel)
+        public async Task<string> DeleteUser(UserDaoModel userModel)
         {
             try
             {
@@ -72,7 +72,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> UpdateRefreshToken(UserModel userModel)
+        public async Task<string> UpdateRefreshToken(UserDaoModel userModel)
         {
             try
             {
@@ -85,7 +85,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> UpdateUser(UserModel userModel)
+        public async Task<string> UpdateUser(UserDaoModel userModel)
         {
             try
             {

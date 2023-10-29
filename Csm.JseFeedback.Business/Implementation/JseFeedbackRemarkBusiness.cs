@@ -18,17 +18,17 @@ namespace Csm.JseFeedback.Business
 
         }
 
-        public async Task<string> AddJseFeedbackRemark(JseFeedbackModel jseFeedbackRemark)
+        public async Task<string> AddJseFeedbackRemark(JseDaoModel jseFeedbackRemark)
         {
             return await _jseFeedbackRemarkRepository.AddJseFeedbackRemark(jseFeedbackRemark);
         }
 
-        public async Task<string> UpdateJseFeedbackRemark(JseFeedbackModel jseFeedbackRemark)
+        public async Task<string> UpdateJseFeedbackRemark(JseDaoModel jseFeedbackRemark)
         {
             return await _jseFeedbackRemarkRepository.UpdateJseFeedbackRemark(jseFeedbackRemark);
         }
 
-        public async Task<string> DeleteJseFeedbackRemark(JseFeedbackModel jseFeedbackRemark)
+        public async Task<string> DeleteJseFeedbackRemark(JseDaoModel jseFeedbackRemark)
         {
             return await _jseFeedbackRemarkRepository.DeleteJseFeedbackRemark(jseFeedbackRemark);
         }

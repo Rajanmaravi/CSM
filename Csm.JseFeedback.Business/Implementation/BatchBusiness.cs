@@ -19,7 +19,7 @@ namespace Csm.JseFeedback.Business
             _batchRepository = batchRepository??throw new ArgumentNullException(nameof(batchRepository)); 
         }
 
-        public async Task<string> AddBatch(BatchModel batchModel)
+        public async Task<string> AddBatch(BatchDaoModel batchModel)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace Csm.JseFeedback.Business
 
        
 
-        public async Task<string> DeleteBatch(BatchModel batchModel)
+        public async Task<string> DeleteBatch(BatchDaoModel batchModel)
         {
             try
             {
@@ -75,7 +75,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> UpdateBatch(BatchModel batchModel)
+        public async Task<string> UpdateBatch(BatchDaoModel batchModel)
         {
             try
             {

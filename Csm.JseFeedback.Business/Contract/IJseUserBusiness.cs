@@ -11,9 +11,9 @@ namespace Csm.JseFeedback.Business
     {
         //Task<IList<JseUserModel>> SearchJseList(JseSearchModel jseSearch);
         //Task<JseUserModel> GetJseDetails(JseSearchModel jseSearch);
-        Task<string> AddJse(JseUserModel jseUser);
-        Task<string> UpdateJse(JseUserModel jseUser);
-        Task<string> DeleteJse(JseUserModel jseUser);
+        Task<string> AddJse(JseUserDaoModel jseUser);
+        Task<string> UpdateJse(JseUserDaoModel jseUser);
+        Task<string> DeleteJse(JseUserDaoModel jseUser);
         //Task<bool> AddJseToBatch(JseUserModel jseUser);
     }
 }

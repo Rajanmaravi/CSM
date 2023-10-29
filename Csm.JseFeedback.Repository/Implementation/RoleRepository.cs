@@ -14,7 +14,7 @@ namespace Csm.JseFeedback.Repository
     {
         public RoleRepository(CsmDbContext dbContext, ILogger<RoleRepository> logger):base(dbContext,logger) { }
 
-        public async Task<string> AddRole(RoleModel roleModel)
+        public async Task<string> AddRole(RoleDaoModel roleModel)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace Csm.JseFeedback.Repository
 
        
 
-        public async Task<string> DeleteRole(RoleModel roleModel)
+        public async Task<string> DeleteRole(RoleDaoModel roleModel)
         {
             try
             {
@@ -75,7 +75,7 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> UpdateRole(RoleModel roleModel)
+        public async Task<string> UpdateRole(RoleDaoModel roleModel)
         {
             try
             {

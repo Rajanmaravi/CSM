@@ -17,7 +17,7 @@ namespace Csm.JseFeedback.Business
             _roleRepository = roleRepository??throw new ArgumentNullException(nameof(roleRepository));
         }
 
-        public async Task<string> AddRole(RoleModel roleModel)
+        public async Task<string> AddRole(RoleDaoModel roleModel)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> DeleteRole(RoleModel roleModel)
+        public async Task<string> DeleteRole(RoleDaoModel roleModel)
         {
             try { 
             return await _roleRepository.DeleteRole(roleModel);
@@ -54,7 +54,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> UpdateRole(RoleModel roleModel)
+        public async Task<string> UpdateRole(RoleDaoModel roleModel)
         {
             try { 
             return await _roleRepository.UpdateRole(roleModel);

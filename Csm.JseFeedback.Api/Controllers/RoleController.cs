@@ -20,7 +20,7 @@ namespace Csm.JseFeedback.Api.Controllers
             _roleBusiness = roleBusiness??throw new ArgumentNullException(nameof(roleBusiness));
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(RoleModel roleModel)
+        public async Task<IActionResult> Create(RoleDaoModel roleModel)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The Role could not be created with the given parameters. Please try again.");
         }
         [HttpPut("Update")]
-        public async Task<IActionResult> Update(RoleModel roleModel)
+        public async Task<IActionResult> Update(RoleDaoModel roleModel)
         {
             try
             {
@@ -60,7 +60,7 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The Role could not be Update with the given parameters. Please try again.");
         }
         [HttpPost("Delete")]
-        public async Task<IActionResult> Delete(RoleModel roleModel)
+        public async Task<IActionResult> Delete(RoleDaoModel roleModel)
         {
             try
             {

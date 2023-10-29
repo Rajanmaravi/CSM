@@ -15,7 +15,7 @@ namespace Csm.JseFeedback.Repository
     {
         public FeedbackRepository(CsmDbContext dbContext, ILogger<FeedbackRepository> logger):base(dbContext,logger) { }
 
-        public async Task<string> AddFeedback(FeedbackModel feedback)
+        public async Task<string> AddFeedback(FeedbackDaoModel feedback)
         {
             try
             {
@@ -37,13 +37,13 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> DeleteFeedback(FeedbackModel feedback)
+        public async Task<string> DeleteFeedback(FeedbackDaoModel feedback)
         {
             try
             {
                 var procedureName = "USP_Delete_Feedback_Details";
                 var parameters = new DynamicParameters();
-                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
+                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@LoggedInUser", feedback.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
@@ -79,7 +79,7 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Search_Feedback_Details";
                 var parameters = new DynamicParameters();
-                parameters.Add("@FeedbackCode", feedbackSearch.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
+                parameters.Add("@FeedbackCode", feedbackSearch.FeedbackCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedbackSearch.FeedbackName, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
@@ -94,13 +94,13 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> UpdateFeedback(FeedbackModel feedback)
+        public async Task<string> UpdateFeedback(FeedbackDaoModel feedback)
         {
             try
             {
                 var procedureName = "USP_Update_Feedback_Details";
                 var parameters = new DynamicParameters();
-                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
+                parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@IsActive", feedback.IsActive, DbType.Boolean, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedback.FeedbackName, DbType.String, ParameterDirection.Input);
                 parameters.Add("@LoggedInUser", feedback.LoggedInUser, DbType.String, ParameterDirection.Input);

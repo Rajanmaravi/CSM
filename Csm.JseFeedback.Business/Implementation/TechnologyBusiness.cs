@@ -17,7 +17,7 @@ namespace Csm.JseFeedback.Repository
         private ITechnologyRepository _technologyRepository;
         public TechnologyBusiness(ILogger<TechnologyBusiness> logger,ITechnologyRepository technologyRepository):base(logger) { _technologyRepository = technologyRepository??throw new ArgumentNullException(nameof(technologyRepository)); }
 
-        public async Task<string> AddTechnology(TechnologyModel technology)
+        public async Task<string> AddTechnology(TechnologyDaoModel technology)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> DeleteTechnology(TechnologyModel technology)
+        public async Task<string> DeleteTechnology(TechnologyDaoModel technology)
         {
             try
             {
@@ -69,7 +69,7 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> UpdateTechnology(TechnologyModel technology)
+        public async Task<string> UpdateTechnology(TechnologyDaoModel technology)
         {
             try
             {

@@ -1,11 +1,13 @@
 using Csm.JseFeedback.Api;
 using Csm.JseFeedback.Commonlibrary;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using NLog;
 using NLog.Web;
+using System.Reflection;
 using System.Text;
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
@@ -37,6 +39,12 @@ try
     //JWT Configuration ends
     // Add services to the container.
     builder.Services.AddControllers();
+    builder.Services.AddFluentValidation(v =>
+    {
+        v.ImplicitlyValidateChildProperties = true;
+        v.ImplicitlyValidateRootCollectionElements = true;
+        v.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+    });
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();

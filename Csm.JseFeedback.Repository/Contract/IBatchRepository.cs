@@ -11,8 +11,8 @@ namespace Csm.JseFeedback.Repository
     {
         Task<IEnumerable<BatchModel>> SearchBatches(BatchSearchModel batchSearch);
         Task<BatchModel> GetBatch(BatchSearchModel batchSearch);
-        Task<string> AddBatch(BatchModel batchModel);
-        Task<string> UpdateBatch(BatchModel batchModel);
-        Task<string> DeleteBatch(BatchModel batchModel);
+        Task<string> AddBatch(BatchDaoModel batchModel);
+        Task<string> UpdateBatch(BatchDaoModel batchModel);
+        Task<string> DeleteBatch(BatchDaoModel batchModel);
     }
 }

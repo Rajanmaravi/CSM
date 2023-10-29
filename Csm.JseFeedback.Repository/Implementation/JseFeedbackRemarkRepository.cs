@@ -15,13 +15,13 @@ namespace Csm.JseFeedback.Repository
     {
         public JseFeedbackRemarkRepository(CsmDbContext dbContext, ILogger<JseFeedbackRemarkRepository> logger) : base(dbContext, logger) { }
 
-        public async Task<string> AddJseFeedbackRemark(JseFeedbackModel jsefeedbackRemark)
+        public async Task<string> AddJseFeedbackRemark(JseDaoModel jsefeedbackRemark)
         {
             try
             {
                 var procedureName = "USP_Add_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
-                parameters.Add("@JSEId", jsefeedbackRemark.JSEId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@JSEId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Month", jsefeedbackRemark.Month, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", jsefeedbackRemark.Year, DbType.String, ParameterDirection.Input);
@@ -39,13 +39,13 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> DeleteJseFeedbackRemark(JseFeedbackModel jsefeedbackRemark)
+        public async Task<string> DeleteJseFeedbackRemark(JseDaoModel jsefeedbackRemark)
         {
             try
             {
                 var procedureName = "USP_Delete_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
-                parameters.Add("@JSEId", jsefeedbackRemark.JSEId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@JSEId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Month", jsefeedbackRemark.Month, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", jsefeedbackRemark.Year, DbType.String, ParameterDirection.Input);
@@ -63,13 +63,13 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        public async Task<string> UpdateJseFeedbackRemark(JseFeedbackModel jsefeedbackRemark)
+        public async Task<string> UpdateJseFeedbackRemark(JseDaoModel jsefeedbackRemark)
         {
             try
             {
                 var procedureName = "USP_Update_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
-                parameters.Add("@JSEId", jsefeedbackRemark.JSEId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@JSEId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Month", jsefeedbackRemark.Month, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", jsefeedbackRemark.Year, DbType.String, ParameterDirection.Input);

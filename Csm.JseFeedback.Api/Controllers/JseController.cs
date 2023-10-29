@@ -20,7 +20,7 @@ namespace Csm.JseFeedback.Api.Controllers
            
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(JseUserModel jseUserModel)
+        public async Task<IActionResult> Create(JseUserDaoModel jseUserModel)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The JSE User could not be created with the given parameters. Please try again.");
         }
         [HttpPut("Update")]
-        public async Task<IActionResult> Update(JseUserModel jseUserModel)
+        public async Task<IActionResult> Update(JseUserDaoModel jseUserModel)
         {
             try
             {
@@ -60,7 +60,7 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The JSE User could not be updated with the given parameters. Please try again.");
         }
         [HttpPost("Delete")]
-        public async Task<IActionResult> Delete(JseUserModel jseUserModel)
+        public async Task<IActionResult> Delete(JseUserDaoModel jseUserModel)
         {
             try
             {

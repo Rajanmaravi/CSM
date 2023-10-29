@@ -11,8 +11,8 @@ namespace Csm.JseFeedback.Repository
     {
         Task<IEnumerable<TechnologyModel>> SearchTechnologies(TechnologySearchModel technologySearch);
         Task<TechnologyModel> GetTechnology(TechnologySearchModel technologySearch);
-        Task<string> AddTechnology(TechnologyModel technology);
-        Task<string> UpdateTechnology(TechnologyModel technology);
-        Task<string> DeleteTechnology(TechnologyModel technology);
+        Task<string> AddTechnology(TechnologyDaoModel technology);
+        Task<string> UpdateTechnology(TechnologyDaoModel technology);
+        Task<string> DeleteTechnology(TechnologyDaoModel technology);
     }
 }

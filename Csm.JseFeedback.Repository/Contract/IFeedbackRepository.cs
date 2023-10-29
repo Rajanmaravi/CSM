@@ -12,9 +12,9 @@ namespace Csm.JseFeedback.Repository
     {
         Task<IEnumerable<FeedbackModel>> SearchFeedbacks(FeedbackSearchModel feedbackSearch);
         Task<FeedbackModel> GetFeedback(FeedbackSearchModel feedbackSearch);
-        Task<string> AddFeedback(FeedbackModel feedback);
-        Task<string> UpdateFeedback(FeedbackModel feedback);
-        Task<string> DeleteFeedback(FeedbackModel feedbackModel);
+        Task<string> AddFeedback(FeedbackDaoModel feedback);
+        Task<string> UpdateFeedback(FeedbackDaoModel feedback);
+        Task<string> DeleteFeedback(FeedbackDaoModel feedbackModel);
         
     }
 }

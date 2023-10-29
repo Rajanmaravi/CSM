@@ -22,7 +22,7 @@ namespace Csm.JseFeedback.Business
             _feedbackRepository = feedbackRepository??throw new ArgumentNullException(nameof(feedbackRepository));
         }
 
-        public async Task<string> AddFeedback(FeedbackModel feedback)
+        public async Task<string> AddFeedback(FeedbackDaoModel feedback)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> DeleteFeedback(FeedbackModel feedback)
+        public async Task<string> DeleteFeedback(FeedbackDaoModel feedback)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> UpdateFeedback(FeedbackModel feedback)
+        public async Task<string> UpdateFeedback(FeedbackDaoModel feedback)
         {
             try
             {

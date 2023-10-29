@@ -10,8 +10,8 @@ namespace Csm.JseFeedback.Business
     public interface IRoleBusiness
     {
         Task<IEnumerable<RoleModel>> SearchRoles();
-        Task<string> AddRole(RoleModel roleModel);
-        Task<string> UpdateRole(RoleModel roleModel);
-        Task<string> DeleteRole(RoleModel roleModel);
+        Task<string> AddRole(RoleDaoModel roleModel);
+        Task<string> UpdateRole(RoleDaoModel roleModel);
+        Task<string> DeleteRole(RoleDaoModel roleModel);
     }
 }

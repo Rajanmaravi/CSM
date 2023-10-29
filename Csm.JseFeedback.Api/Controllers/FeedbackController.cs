@@ -1,6 +1,7 @@
 using Csm.JseFeedback.Business;
 using Csm.JseFeedback.Model;
 using Csm.JseFeedback.Model.Search;
+using Csm.JseFeedback.Model.Validator;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata;
 
@@ -13,17 +14,24 @@ namespace Csm.JseFeedback.Api.Controllers
         
 
         private readonly IFeedbackBusiness _feedbackBusiness;
+        private readonly FeedbackDaoValidator _feedbackValidator;
+        private readonly IFeedbackValidationService _feedbackValidationService;
 
-        public FeedbackController(ILogger<FeedbackController> logger, IFeedbackBusiness feedbackBusiness):base(logger)
+        public FeedbackController(ILogger<FeedbackController> logger, IFeedbackBusiness feedbackBusiness, IFeedbackValidationService feedbackValidationService) :base(logger)
         {
             _feedbackBusiness = feedbackBusiness??throw new ArgumentNullException(nameof(feedbackBusiness));
-           
+            _feedbackValidationService = feedbackValidationService ?? throw new ArgumentNullException(nameof(feedbackValidationService)); 
+
+
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(FeedbackModel feedbackModel)
+        public async Task<IActionResult> Create(FeedbackDaoModel feedbackModel)
         {
             try
             {
+                var validationStatus = _feedbackValidationService.ValidateDao(feedbackModel);
+                if (!validationStatus.IsValid)
+                    return BadRequest(validationStatus.Errors);
                 var creationStatus = await _feedbackBusiness.AddFeedback(feedbackModel);
                 if(!string.IsNullOrEmpty(creationStatus))
                 {
@@ -40,10 +48,13 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The feedback could not be created with the given parameters. Please try again.");
         }
         [HttpPut("Update")]
-        public async Task<IActionResult> Update(FeedbackModel feedbackModel)
+        public async Task<IActionResult> Update(FeedbackDaoModel feedbackModel)
         {
             try
             {
+                var validationStatus = _feedbackValidationService.ValidateDao(feedbackModel);
+                if (!validationStatus.IsValid)
+                    return BadRequest(validationStatus.Errors);
                 var updateStatus = await _feedbackBusiness.UpdateFeedback(feedbackModel);
                 if (!string.IsNullOrEmpty(updateStatus))
                 {
@@ -60,10 +71,13 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The feedback could not be Update with the given parameters. Please try again.");
         }
         [HttpPost("Delete")]
-        public async Task<IActionResult> Delete(FeedbackModel feedbackModel)
+        public async Task<IActionResult> Delete(FeedbackDaoModel feedbackModel)
         {
             try
             {
+                var validationStatus = _feedbackValidationService.ValidateDao(feedbackModel);
+                if (!validationStatus.IsValid)
+                    return BadRequest(validationStatus.Errors);
                 var deleteStatus = await _feedbackBusiness.DeleteFeedback(feedbackModel);
                 if (!string.IsNullOrEmpty(deleteStatus))
                 {
@@ -84,6 +98,9 @@ namespace Csm.JseFeedback.Api.Controllers
         {
             try
             {
+                var validationStatus = _feedbackValidationService.ValidateSearch(feedbackSearchModel);
+                if (!validationStatus.IsValid)
+                    return BadRequest(validationStatus.Errors);
                 var feedbacks = await _feedbackBusiness.SearchFeedbacks(feedbackSearchModel);
                 return Ok(feedbacks);
                
@@ -95,12 +112,12 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("Unable to fetch the list of Feedbacks.");
 
         }
-        [HttpPost("Get")]
-        public async Task<IActionResult> Get(FeedbackSearchModel feedbackSearchModel)
+        [HttpGet()]
+        public async Task<IActionResult> Get()
         {
             try
             {
-                var feedback = await _feedbackBusiness.GetFeedback(feedbackSearchModel);
+                var feedback = await _feedbackBusiness.GetFeedback(new FeedbackSearchModel { });
                 return Ok(feedback);
 
             }

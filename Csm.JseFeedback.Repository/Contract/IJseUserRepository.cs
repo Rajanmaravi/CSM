@@ -11,9 +11,9 @@ namespace Csm.JseFeedback.Repository
     {
         //Task<IList<JseUserModel>> SearchJseList(JseSearchModel jseSearch);
         //Task<JseUserModel> GetJseDetails(JseSearchModel jseSearch);
-        Task<string> AddJseInformation(JseUserModel jseUser);
-        Task<string> UpdateJseInformation(JseUserModel jseUser);
-        Task<string> DeleteJseInformation(JseUserModel jseUser);
+        Task<string> AddJseInformation(JseUserDaoModel jseUser);
+        Task<string> UpdateJseInformation(JseUserDaoModel jseUser);
+        Task<string> DeleteJseInformation(JseUserDaoModel jseUser);
         //Task<bool> AddJseToBatch(JseUserModel jseUser);
     }
 }

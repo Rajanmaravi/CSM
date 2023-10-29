@@ -59,7 +59,14 @@ namespace Csm.JseFeedback.Api.Controllers
                 };
                 userDetails.RefreshToken = response.RefreshToken;
                 userDetails.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
-                _userBusiness.UpdateRefreshToken(userDetails);
+                await _userBusiness.UpdateRefreshToken(new UserDaoModel
+                {
+                    EmployeeCode = userDetails.EmployeeCode,
+                    RefreshToken = userDetails.RefreshToken,
+                    RefreshTokenExpiresOn = userDetails.RefreshTokenExpiresOn
+
+                }
+           );
                 return Ok(response);
             }
             catch(Exception ex)
@@ -97,7 +104,12 @@ namespace Csm.JseFeedback.Api.Controllers
             };
             loggedInUser.RefreshToken = response.RefreshToken;
             loggedInUser.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
-            await _userBusiness.UpdateRefreshToken(loggedInUser);
+            await _userBusiness.UpdateRefreshToken(new UserDaoModel 
+                {
+                EmployeeCode=loggedInUser.EmployeeCode,RefreshToken=loggedInUser.RefreshToken,RefreshTokenExpiresOn=loggedInUser.RefreshTokenExpiresOn
+                
+            }
+            );
 
             return Ok(response);
         }
@@ -114,8 +126,14 @@ namespace Csm.JseFeedback.Api.Controllers
             var loggedInUser = users.FirstOrDefault();
             loggedInUser.RefreshToken = null;
             loggedInUser.RefreshTokenExpiresOn = null;
-            _userBusiness.UpdateRefreshToken(loggedInUser);
+            await _userBusiness.UpdateRefreshToken(new UserDaoModel
+            {
+                EmployeeCode = loggedInUser.EmployeeCode,
+                RefreshToken = loggedInUser.RefreshToken,
+                RefreshTokenExpiresOn = loggedInUser.RefreshTokenExpiresOn
 
+            }
+                       );
             return NoContent();
         }
     }

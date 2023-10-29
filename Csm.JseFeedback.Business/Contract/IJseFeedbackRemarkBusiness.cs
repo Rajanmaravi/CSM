@@ -9,8 +9,8 @@ namespace Csm.JseFeedback.Business
 {
     public interface IJseFeedbackRemarkBusiness
     {
-        Task<string> AddJseFeedbackRemark(JseFeedbackModel jsefeedback);
-        Task<string> UpdateJseFeedbackRemark(JseFeedbackModel jsefeedback);
-        Task<string> DeleteJseFeedbackRemark(JseFeedbackModel jsefeedback);
+        Task<string> AddJseFeedbackRemark(JseDaoModel jsefeedback);
+        Task<string> UpdateJseFeedbackRemark(JseDaoModel jsefeedback);
+        Task<string> DeleteJseFeedbackRemark(JseDaoModel jsefeedback);
     }
 }

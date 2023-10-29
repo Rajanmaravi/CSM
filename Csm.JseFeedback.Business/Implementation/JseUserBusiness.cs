@@ -18,7 +18,7 @@ namespace Csm.JseFeedback.Business
             _jseUserRepository = jseUserRepository?? throw new ArgumentNullException(nameof(jseUserRepository));
         }
 
-        public async Task<string> AddJse(JseUserModel jseUser)
+        public async Task<string> AddJse(JseUserDaoModel jseUser)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        public async Task<string> UpdateJse(JseUserModel jseUser)
+        public async Task<string> UpdateJse(JseUserDaoModel jseUser)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace Csm.JseFeedback.Business
             }
 }
 
-        public async Task<string> DeleteJse(JseUserModel jseUser)
+        public async Task<string> DeleteJse(JseUserDaoModel jseUser)
         {
             try
             {

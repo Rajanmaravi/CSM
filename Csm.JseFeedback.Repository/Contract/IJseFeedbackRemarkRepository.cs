@@ -9,8 +9,8 @@ namespace Csm.JseFeedback.Repository
 {
     public interface IJseFeedbackRemarkRepository
     {
-        Task<string> AddJseFeedbackRemark(JseFeedbackModel jsefeedbackRemark);
-        Task<string> UpdateJseFeedbackRemark(JseFeedbackModel jsefeedbackRemark);
-        Task<string> DeleteJseFeedbackRemark(JseFeedbackModel jsefeedbackRemark);
+        Task<string> AddJseFeedbackRemark(JseDaoModel jsefeedbackRemark);
+        Task<string> UpdateJseFeedbackRemark(JseDaoModel jsefeedbackRemark);
+        Task<string> DeleteJseFeedbackRemark(JseDaoModel jsefeedbackRemark);
     }
 }

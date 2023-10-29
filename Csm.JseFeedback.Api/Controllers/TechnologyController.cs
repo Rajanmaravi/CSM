@@ -21,7 +21,7 @@ namespace Csm.JseFeedback.Api.Controllers
            
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(TechnologyModel technologyModel)
+        public async Task<IActionResult> Create(TechnologyDaoModel technologyModel)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The Technology could not be created with the given parameters. Please try again.");
         }
         [HttpPut("Update")]
-        public async Task<IActionResult> Update(TechnologyModel technologyModel)
+        public async Task<IActionResult> Update(TechnologyDaoModel technologyModel)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("The Technology could not be Update with the given parameters. Please try again.");
         }
         [HttpPost("Delete")]
-        public async Task<IActionResult> Delete(TechnologyModel technologyModel)
+        public async Task<IActionResult> Delete(TechnologyDaoModel technologyModel)
         {
             try
             {

@@ -1,7 +1,11 @@
 ﻿using Csm.JseFeedback.Business;
+using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Validator;
 using Csm.JseFeedback.Repository;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using System.Reflection;
 using System.Text;
 namespace Csm.JseFeedback.Api
 {
@@ -20,7 +24,13 @@ namespace Csm.JseFeedback.Api
             .AddTransient<IFeedbackRepository, FeedbackRepository>()
             .AddTransient<ITokenService, TokenService>()
             .AddTransient<IRoleBusiness, RoleBusiness>()
-            .AddTransient<IRoleRepository, RoleRepository>();
+            .AddTransient<IRoleRepository, RoleRepository>()
+            .AddTransient<FeedbackDaoValidator>()
+            .AddTransient<FeedbackSearchValidator>()
+            .AddTransient<IFeedbackValidationService,FeedbackValidationService>();
+            
+
+              
 
         }
     }
