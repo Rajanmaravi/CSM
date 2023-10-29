@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Csm.JseFeedback.Repository
 {
-    public interface IJseBusiness
+    public interface IJseUserRepository
     {
         //Task<IList<JseUserModel>> SearchJseList(JseSearchModel jseSearch);
         //Task<JseUserModel> GetJseDetails(JseSearchModel jseSearch);
-        Task<string> AddJse(JseUserModel jseUser);
-        Task<string> UpdateJse(JseUserModel jseUser);
-        Task<string> DeleteJse(JseUserModel jseUser);
+        Task<string> AddJseInformation(JseUserModel jseUser);
+        Task<string> UpdateJseInformation(JseUserModel jseUser);
+        Task<string> DeleteJseInformation(JseUserModel jseUser);
         //Task<bool> AddJseToBatch(JseUserModel jseUser);
     }
 }

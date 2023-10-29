@@ -41,7 +41,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Delete_Feedback";
+                var procedureName = "USP_Delete_Feedback_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@LoggedInUser", feedback.LoggedInUser, DbType.String, ParameterDirection.Input);
@@ -77,7 +77,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Search_Feedback";
+                var procedureName = "USP_Search_Feedback_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@FeedbackCode", feedbackSearch.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@FeedbackName", feedbackSearch.FeedbackName, DbType.String, ParameterDirection.Input);
@@ -98,7 +98,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Update_Feedback";
+                var procedureName = "USP_Update_Feedback_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@FeedbackCode", feedback.FeedbackCode, DbType.VarNumeric, ParameterDirection.Input);
                 parameters.Add("@IsActive", feedback.IsActive, DbType.Boolean, ParameterDirection.Input);

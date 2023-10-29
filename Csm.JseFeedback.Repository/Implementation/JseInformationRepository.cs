@@ -10,9 +10,9 @@ using System.Data;
 
 namespace Csm.JseFeedback.Repository
 {
-    public class JseInformationRepository : BaseRepository, IJseRepository
+    public class JseUserRepository : BaseRepository, IJseUserRepository
     {
-        public JseInformationRepository(CsmDbContext dbContext, ILogger<JseInformationRepository> logger) : base(dbContext, logger) { }
+        public JseUserRepository(CsmDbContext dbContext, ILogger<JseUserRepository> logger) : base(dbContext, logger) { }
 
 
         public async Task<string> AddJseInformation(JseUserModel jseUser)
