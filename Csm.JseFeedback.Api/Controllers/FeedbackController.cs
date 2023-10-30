@@ -31,7 +31,7 @@ namespace Csm.JseFeedback.Api.Controllers
             {
                 var validationStatus = _feedbackValidationService.ValidateDao(feedbackModel);
                 if (!validationStatus.IsValid)
-                    return BadRequest(validationStatus.Errors);
+                    return BadRequest(validationStatus.Errors.Select(err=>err.ErrorMessage));
                 var creationStatus = await _feedbackBusiness.AddFeedback(feedbackModel);
                 if(!string.IsNullOrEmpty(creationStatus))
                 {
