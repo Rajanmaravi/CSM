@@ -50,7 +50,6 @@ namespace Csm.JseFeedback.Repository
                 parameters.Add("@BatchName", batchModel.BatchName, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", batchModel.Year, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Month", batchModel.Month, DbType.String, ParameterDirection.Input);
-                parameters.Add("@IsActive", batchModel.IsActive, DbType.Boolean, ParameterDirection.Input);
                 parameters.Add("@LoggedInUser", batchModel.LoggedInUser, DbType.String, ParameterDirection.Input);
 
                 using (var connection = _dbContext.CreateConnection())
@@ -84,7 +83,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Search_Batch";
+                var procedureName = "USP_Search_Batch_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@BatchCode", searchModel.BatchCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@BatchName", searchModel.BatchName, DbType.String, ParameterDirection.Input);

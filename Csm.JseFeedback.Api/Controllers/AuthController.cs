@@ -77,8 +77,7 @@ namespace Csm.JseFeedback.Api.Controllers
 
         }
 
-        [HttpPost]
-        [Route("RefreshToken")]
+        [HttpPost, Route("RefreshToken")]
         public async Task<IActionResult> Refresh(TokenApiModel tokenApiModel)
         {
             if (tokenApiModel is null)

@@ -57,7 +57,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The User could not be created with the given parameters. Please try again.");
         }
-        [HttpPut("Update")]
+        [HttpPost("Update")]
         public async Task<IActionResult> Update(UserDaoModel userModel)
         {
             try

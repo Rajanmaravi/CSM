@@ -39,7 +39,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The Role could not be created with the given parameters. Please try again.");
         }
-        [HttpPut("Update")]
+        [HttpPost("Update")]
         public async Task<IActionResult> Update(RoleDaoModel roleModel)
         {
             try
@@ -77,9 +77,9 @@ namespace Csm.JseFeedback.Api.Controllers
             {
                 _logger.LogError($"Exception in RoleController.Delete {ex}");
             }
-            return BadRequest("The Role could not be Update with the given parameters. Please try again.");
+            return BadRequest("The Role could not be Deleted with the given parameters. Please try again.");
         }
-        [HttpPost("Search")]
+        [HttpGet("Search")]
         public async Task<IActionResult> Search()
         {
             try
@@ -92,7 +92,7 @@ namespace Csm.JseFeedback.Api.Controllers
             {
                 _logger.LogError($"Exception in RoleController.Search {ex}");
             }
-            return BadRequest("Unable to fetch the list of Technologies.");
+            return BadRequest("Unable to fetch the list of Roles.");
 
         }
        

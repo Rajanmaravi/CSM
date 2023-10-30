@@ -1,5 +1,6 @@
 ﻿using Csm.JseFeedback.Model;
 using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,7 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-       
+
 
         public async Task<string> DeleteRole(RoleDaoModel roleModel)
         {
@@ -44,6 +45,9 @@ namespace Csm.JseFeedback.Repository
                 var procedureName = "USP_Delete_Role_Details";
                 var parameters = new DynamicParameters();
                 parameters.Add("@RoleCode", roleModel.RoleCode, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Description", roleModel.Description, DbType.String, ParameterDirection.Input);
+                parameters.Add("@LoggedInUser", roleModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+
                 using (var connection = _dbContext.CreateConnection())
                 {
                     return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
@@ -56,12 +60,11 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-       
         public async Task<IEnumerable<RoleModel>> SearchRoles()
         {
             try
             {
-                var procedureName = "USP_Search_Role";
+                var procedureName = "USP_Search_Role_Details";
                 var parameters = new DynamicParameters();
                 using (var connection = _dbContext.CreateConnection())
                 {
