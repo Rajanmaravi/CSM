@@ -21,7 +21,7 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Add_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
-                parameters.Add("@JSEId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@JseId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Month", jsefeedbackRemark.Month, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", jsefeedbackRemark.Year, DbType.String, ParameterDirection.Input);
@@ -45,7 +45,7 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Delete_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
-                parameters.Add("@JSEId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@JseId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Month", jsefeedbackRemark.Month, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", jsefeedbackRemark.Year, DbType.String, ParameterDirection.Input);
@@ -69,7 +69,7 @@ namespace Csm.JseFeedback.Repository
             {
                 var procedureName = "USP_Update_Jse_Feedback_Remarks";
                 var parameters = new DynamicParameters();
-                parameters.Add("@JSEId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@JseId", jsefeedbackRemark.JseId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@FeedbackId", jsefeedbackRemark.FeedbackId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Month", jsefeedbackRemark.Month, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Year", jsefeedbackRemark.Year, DbType.String, ParameterDirection.Input);
