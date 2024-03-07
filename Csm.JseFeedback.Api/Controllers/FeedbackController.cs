@@ -128,5 +128,35 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("Unable to fetch the requested feedback.");
 
         }
+
+        [HttpGet("GetMapRAInternsByCode/{empCode}")]
+        public async Task<IActionResult> GetMapRAJseUserCode(string empCode)
+        {
+            try
+            {
+                var jseList = await _feedbackBusiness.GetMapRAJseUserDetailsByCode(empCode);
+                return Ok(jseList);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in FeedbackController.GetMapRAJseUserCode");
+                return BadRequest("An error occurred while fetching the GetMapRAJseUserCode.");
+            }
+        }
+
+        [HttpGet("GetAspect")]
+        public async Task<IActionResult> GetAspect()
+        {
+            try
+            {
+                var jseList = await _feedbackBusiness.GetAspectDetails();
+                return Ok(jseList);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in FeedbackController.GetAspectDetails");
+                return BadRequest("An error occurred while fetching the GetAspectDetails.");
+            }
+        }
     }
 }

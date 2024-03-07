@@ -10,6 +10,8 @@ namespace Csm.JseFeedback.Model
     public class JseUserDaoModel:BaseDaoModel
     {
         [Required]
+        public int Id { get; set; }
+        [Required]
         public string EmployeeCode { get; set; }
         [Required]
         public string FirstName { get; set; }
@@ -20,14 +22,13 @@ namespace Csm.JseFeedback.Model
         public string Email { get; set; }
         [Required]
         public string Mobile { get; set; }
+
+        //public string RaCode { get; set; }
+        //public string RaEmail { get; set; }
         [Required]
-        public string RaCode { get; set; }
+        public string? PmCode { get; set; }
         [Required]
-        public string RaEmail { get; set; }
-        [Required]
-        public string PmCode { get; set; }
-        [Required]
-        public string PmEmail { get; set; }
+        public string? PmEmail { get; set; }
         public string? Location { get; set; }
         public string? ProjectName { get; set; }
         public int? BatchId { get; set; }

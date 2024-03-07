@@ -125,5 +125,37 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("Unable to fetch the requested Batch.");
 
         }
+
+        [HttpGet("GetBatchList")]
+        public async Task<IActionResult> GetBatchList()
+        {
+            try
+            {
+                var batchList = await _batchBusiness.GetBatchList();
+                return Ok(batchList);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in BatchController.GetBatchList");
+                return BadRequest("An error occurred while fetching the batch list.");
+            }
+        }
+
+        [HttpGet("GetRA")]
+        public async Task<IActionResult> GetRA()
+        {
+            try
+            {
+                var batchList = await _batchBusiness.GetRa();
+                return Ok(batchList);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in BatchController.GetRa");
+                return BadRequest("An error occurred while fetching the Ra list.");
+            }
+        }
     }
 }

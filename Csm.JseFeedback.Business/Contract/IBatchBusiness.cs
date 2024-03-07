@@ -1,4 +1,5 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,7 @@ namespace Csm.JseFeedback.Business
         Task<string> AddBatch(BatchDaoModel batchModel);
         Task<string> UpdateBatch(BatchDaoModel batchModel);
         Task<string> DeleteBatch(BatchDaoModel batchModel);
+        Task<List<BatchDetailsDaoModel>> GetBatchList();
+        Task<List<RaDaoModel>> GetRa();
     }
 }

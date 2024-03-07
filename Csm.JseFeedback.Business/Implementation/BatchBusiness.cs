@@ -1,4 +1,5 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Repository;
 using Dapper;
 using Microsoft.Extensions.Logging;
@@ -84,6 +85,32 @@ namespace Csm.JseFeedback.Business
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Exception BatchBusiness.UpdateBatch");
+                throw;
+            }
+        }
+
+        public async Task<List<BatchDetailsDaoModel>> GetBatchList()
+        {
+            try
+            {
+                return await _batchRepository.GetBatchList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception BatchBusiness.GetBatchList");
+                throw;
+            }
+        }
+
+        public async Task<List<RaDaoModel>> GetRa()
+        {
+            try
+            {
+                return await _batchRepository.GetRa();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception BatchBusiness.GetRa");
                 throw;
             }
         }

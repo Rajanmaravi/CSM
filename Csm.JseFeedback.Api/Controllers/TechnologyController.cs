@@ -112,5 +112,22 @@ namespace Csm.JseFeedback.Api.Controllers
             return BadRequest("Unable to fetch the requested Technology.");
 
         }
+
+        [HttpGet("GetTechnology")]
+        public async Task<IActionResult> GetTechnology()
+        {
+            try
+            {
+                var technology = await _technologyBusiness.GetTechnologyList();
+                return Ok(technology);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Exception in TechnologyController.Get {ex}");
+            }
+            return BadRequest("Unable to fetch the requested Technology.");
+
+        }
     }
 }

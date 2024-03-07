@@ -1,5 +1,6 @@
 using Csm.JseFeedback.Business;
 using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Search;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata;
@@ -20,7 +21,7 @@ namespace Csm.JseFeedback.Api.Controllers
            
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(JseUserDaoModel jseUserModel)
+        public async Task<IActionResult> Create(JseUserAddDaoModel jseUserModel)
         {
             try
             {
@@ -79,14 +80,29 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The JSE User could not be deleted with the given parameters. Please try again.");
         }
-        [HttpPost("Upload")]
+        [HttpPost("UploadJseUser")]
         public async Task<IActionResult> UploadJseUserData(IFormFile formFile)
         {
             try 
             {
                 if (formFile == null)
                     return BadRequest("Please select a file with Jse User data to continue.");
-                return Ok("100 Jse users have been successfully uploaded.");
+                var uploadStatus = await _jseUserBusiness.UploadJseData(formFile);
+             
+                if (!string.IsNullOrEmpty(uploadStatus))
+                {
+                    var responseObject = new { status = uploadStatus };
+
+                    if (uploadStatus.ToLower() != "success")
+                        return BadRequest(responseObject);
+
+                    return Ok(responseObject);
+                }
+
+                // Return an appropriate success response
+                var successResponse = new { status = "success", message = "Jse users have been successfully uploaded." };
+                return Ok(successResponse);
+
             }
             catch (Exception ex)
             {
@@ -94,6 +110,36 @@ namespace Csm.JseFeedback.Api.Controllers
             }
             return BadRequest("The JSE User could not be deleted with the given parameters. Please try again.");
         }
-       
+
+        [HttpGet("GetJseUser")]
+        public async Task<IActionResult> GetJseUser()
+        {
+            try
+            {
+                var jseList = await _jseUserBusiness.GetJseUserDetails();
+                return Ok(jseList);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in JseUserController.GetJseUserDetails");
+                return BadRequest("An error occurred while fetching the JseUserDetails list.");
+            }
+        }
+
+        [HttpGet("GetMapRAInterns")]
+        public async Task<IActionResult> GetMapRAJseUser()
+        {
+            try
+            {
+                var jseList = await _jseUserBusiness.GetMapRAJseUserDetails();
+                return Ok(jseList);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in JseUserController.GetMapRAJseUser");
+                return BadRequest("An error occurred while fetching the GetMapRAJseUser list.");
+            }
+        }       
+
     }
 }

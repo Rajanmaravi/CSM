@@ -1,4 +1,5 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Search;
 using Dapper;
 using Microsoft.Extensions.Logging;
@@ -117,6 +118,49 @@ namespace Csm.JseFeedback.Repository
             }
         }
 
-        
+        public async Task<JseUserDaoDetailsModel> GetMapRAUserDetailsByCode(string internCode)
+        {
+            try
+            {
+                var procedureName = "USP_Get_Interns_Details_ByCode";
+                var parameters = new DynamicParameters();
+                parameters.Add("@EmployeeCode", internCode, DbType.String, ParameterDirection.Input);
+
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    var result = await connection.QueryAsync<JseUserDaoDetailsModel>(
+                        sql: procedureName,
+                        param: parameters,
+                        commandType: CommandType.StoredProcedure
+                    );
+
+                    return result.FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception FeedbackRepository.UpdateFeedback");
+                throw;
+            }
+        }
+
+        public async Task<List<AspectDaoModel>> GetAspectDetails()
+        {
+            try
+            {
+                var procedureName = "USP_Get_Aspect_Details";
+
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    var result = await connection.QueryAsync<AspectDaoModel>(sql: procedureName, commandType: CommandType.StoredProcedure);
+                    return result.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in FeedbackRepository.GetAspectDetails");
+                throw;
+            }
+        }
     }
 }

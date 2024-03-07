@@ -13,7 +13,7 @@ namespace Csm.JseFeedback.Model
         public string? RefreshToken { get; set; }
         public DateTime? DateOfExpiry { get; set; }
         public DateTime? RefreshTokenExpiryTime { get; set; }
-
+        public string? UserRole { get; set; }
 
     }
 }

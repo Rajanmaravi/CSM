@@ -81,3 +81,358 @@ D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\nlog.config
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.Development.json
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.json
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.exe
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.deps.json
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.runtimeconfig.json
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.pdb
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Core.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Identity.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Dapper.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Memory.Data.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+D:\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.AssemblyReference.cache
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfoInputs.cache
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfo.cs
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CoreCompileInputs.cache
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.Csm.JseFeedback.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.Csm.JseFeedback.Api.props
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Csm.JseFeedback.Api.props
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Csm.JseFeedback.Api.props
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.pack.json
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.build.json
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.development.json
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\scopedcss\bundle\Csm.JseFeedback.Api.styles.css
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CopyComplete
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.dll
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\refint\Csm.JseFeedback.Api.dll
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.pdb
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.genruntimeconfig.cache
+D:\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\ref\Csm.JseFeedback.Api.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\nlog.config
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.Development.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.exe
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.deps.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.runtimeconfig.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Core.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Identity.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Dapper.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Memory.Data.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.AssemblyReference.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.GeneratedMSBuildEditorConfig.editorconfig
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfoInputs.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfo.cs
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CoreCompileInputs.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cs
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.Csm.JseFeedback.Api.Microsoft.AspNetCore.StaticWebAssets.props
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.Csm.JseFeedback.Api.props
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Csm.JseFeedback.Api.props
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Csm.JseFeedback.Api.props
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.pack.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.build.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.development.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\scopedcss\bundle\Csm.JseFeedback.Api.styles.css
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CopyComplete
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\refint\Csm.JseFeedback.Api.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.genruntimeconfig.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Api\obj\Debug\net6.0\ref\Csm.JseFeedback.Api.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\nlog.config
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.exe
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.deps.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.runtimeconfig.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Dapper.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.AssemblyReference.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfoInputs.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfo.cs
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CoreCompileInputs.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.Csm.JseFeedback.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.Csm.JseFeedback.Api.props
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Csm.JseFeedback.Api.props
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Csm.JseFeedback.Api.props
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\scopedcss\bundle\Csm.JseFeedback.Api.styles.css
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CopyComplete
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\refint\Csm.JseFeedback.Api.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.genruntimeconfig.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\ref\Csm.JseFeedback.Api.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\nlog.config
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.Development.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\appsettings.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.exe
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.deps.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.runtimeconfig.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Api.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Core.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Azure.Identity.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Dapper.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Memory.Data.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.AssemblyReference.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfoInputs.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.AssemblyInfo.cs
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CoreCompileInputs.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.Csm.JseFeedback.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.Csm.JseFeedback.Api.props
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Csm.JseFeedback.Api.props
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Csm.JseFeedback.Api.props
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.pack.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.build.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\staticwebassets.development.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\scopedcss\bundle\Csm.JseFeedback.Api.styles.css
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.csproj.CopyComplete
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\refint\Csm.JseFeedback.Api.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\Csm.JseFeedback.Api.genruntimeconfig.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\obj\Debug\net6.0\ref\Csm.JseFeedback.Api.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\CsvHelper.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Linq.Async.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\EPPlus.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\EPPlus.Interfaces.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\ClosedXML.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\ExcelNumberFormat.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\Irony.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\SixLabors.Fonts.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\System.IO.Packaging.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\XLParser.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\MailKit.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\MimeKit.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Api\bin\Debug\net6.0\NETCore.MailKit.dll
