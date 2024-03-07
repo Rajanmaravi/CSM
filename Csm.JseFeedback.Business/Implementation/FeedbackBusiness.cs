@@ -1,5 +1,6 @@
 ﻿using Csm.JseFeedback.Business;
 using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Search;
 using Csm.JseFeedback.Repository;
 using Dapper;
@@ -59,7 +60,7 @@ namespace Csm.JseFeedback.Business
                 _logger.LogError(ex, "Exception FeedbackBusiness.GetFeedback");
                 throw;
             }
-        }
+        }    
 
         public async Task<IEnumerable<FeedbackModel>> SearchFeedbacks(FeedbackSearchModel feedbackSearch)
         {
@@ -87,6 +88,30 @@ namespace Csm.JseFeedback.Business
             }
         }
 
-        
+        public async Task<JseUserDaoDetailsModel> GetMapRAJseUserDetailsByCode(string internCode)
+        {
+            try
+            {
+                return await _feedbackRepository.GetMapRAUserDetailsByCode(internCode);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception FeedbackBusiness.GetMapRAUserDetailsByCode");
+                throw;
+            }
+        }
+
+        public async Task<List<AspectDaoModel>> GetAspectDetails()
+        {
+            try
+            {
+                return await _feedbackRepository.GetAspectDetails();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception FeedbackBusiness.GetAspectDetails");
+                throw;
+            }
+        }
     }
 }

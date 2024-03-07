@@ -1,4 +1,5 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Search;
 using Dapper;
 using Microsoft.Extensions.Logging;
@@ -113,6 +114,25 @@ namespace Csm.JseFeedback.Repository
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Exception TechnologyRepository.UpdateTechnology");
+                throw;
+            }
+        }
+
+        public async Task<List<TechnologyDetailsDaoModel>> GetTechnologyList()
+        {
+            try
+            {
+                var procedureName = "USP_GetActive_Technology_Details";
+
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    var result = await connection.QueryAsync<TechnologyDetailsDaoModel>(sql: procedureName, commandType: CommandType.StoredProcedure);
+                    return result.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in TechnologyRepository.GetTechnologyList");
                 throw;
             }
         }

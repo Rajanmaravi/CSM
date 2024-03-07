@@ -17,3 +17,79 @@ D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFee
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Business\obj\Debug\net6.0\refint\Csm.JseFeedback.Business.dll
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.pdb
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Business\obj\Debug\net6.0\ref\Csm.JseFeedback.Business.dll
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.deps.json
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.AssemblyReference.cache
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfoInputs.cache
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfo.cs
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CoreCompileInputs.cache
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CopyComplete
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.dll
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\refint\Csm.JseFeedback.Business.dll
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.pdb
+D:\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\ref\Csm.JseFeedback.Business.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.deps.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.AssemblyReference.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.GeneratedMSBuildEditorConfig.editorconfig
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfoInputs.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfo.cs
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CoreCompileInputs.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CopyComplete
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\refint\Csm.JseFeedback.Business.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Business\obj\Debug\net6.0\ref\Csm.JseFeedback.Business.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.deps.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.AssemblyReference.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfoInputs.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfo.cs
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CoreCompileInputs.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CopyComplete
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\refint\Csm.JseFeedback.Business.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\ref\Csm.JseFeedback.Business.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.deps.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Business.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Repository.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\bin\Debug\net6.0\Csm.JseFeedback.Model.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.AssemblyReference.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfoInputs.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.AssemblyInfo.cs
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CoreCompileInputs.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.csproj.CopyComplete
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\refint\Csm.JseFeedback.Business.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\Csm.JseFeedback.Business.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Business\obj\Debug\net6.0\ref\Csm.JseFeedback.Business.dll

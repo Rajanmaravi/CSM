@@ -1,9 +1,15 @@
 ﻿using Csm.JseFeedback.Business;
+using Csm.JseFeedback.Business.Contract;
+using Csm.JseFeedback.Business.Implementation;
 using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Validator;
 using Csm.JseFeedback.Repository;
+using Csm.JseFeedback.Repository.Contract;
+using Csm.JseFeedback.Repository.Implementation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
 using System.Text;
@@ -27,6 +33,14 @@ namespace Csm.JseFeedback.Api
             .AddTransient<IRoleRepository, RoleRepository>()
             .AddTransient<FeedbackDaoValidator>()
             .AddTransient<FeedbackSearchValidator>()
+            .AddTransient<IJseUserRepository, JseUserRepository>()
+            .AddTransient<IJseUserBusiness, JseUserBusiness>()
+            .AddTransient<IReportingAuthorityBusiness, ReportingAuthorityBusiness>()
+            .AddTransient<IReportingAuthorityRepository,ReportingAuthorityRepository>()
+            .AddTransient<IFeedbackLinkBusiness, FeedbackLinkBusiness>()
+            .AddTransient<IFeedbackLinkRepository, FeedbackLinkRepository>()
+            .AddTransient<IReportingAuthorityFeedbackBusiness, ReportingAuthorityFeedbackBusiness>()
+            .AddTransient<IReportingAuthorityFeedbackRepository, ReportingAuthorityFeedbackRepository>()
             .AddTransient<IFeedbackValidationService,FeedbackValidationService>();
             
 

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\JSEFeedbackClone\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj": {}
+    "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj": {}
   },
   "projects": {
-    "D:\\JSEFeedbackClone\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj": {
+    "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj",
+        "projectUniqueName": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj",
         "projectName": "Csm.JseFeedback.Api",
-        "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj",
-        "packagesPath": "C:\\Users\\gurucharan.das\\.nuget\\packages\\",
-        "outputPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Api\\obj\\",
+        "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Api\\Csm.JseFeedback.Api.csproj",
+        "packagesPath": "C:\\Users\\rajan.maravi\\.nuget\\packages\\",
+        "outputPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurucharan.das\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rajan.maravi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,14 +27,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\JSEFeedbackClone\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj": {
-                "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj"
+              "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj": {
+                "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj"
               }
             }
           }
@@ -49,9 +51,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.23, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -77,25 +95,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\JSEFeedbackClone\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj": {
+    "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj",
+        "projectUniqueName": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj",
         "projectName": "Csm.JseFeedback.Business",
-        "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj",
-        "packagesPath": "C:\\Users\\gurucharan.das\\.nuget\\packages\\",
-        "outputPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Business\\obj\\",
+        "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Business\\Csm.JseFeedback.Business.csproj",
+        "packagesPath": "C:\\Users\\rajan.maravi\\.nuget\\packages\\",
+        "outputPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurucharan.das\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rajan.maravi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -104,14 +122,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\JSEFeedbackClone\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj": {
-                "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj"
+              "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj": {
+                "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj"
               }
             }
           }
@@ -125,6 +144,32 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -141,25 +186,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\JSEFeedbackClone\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj": {
+    "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj",
+        "projectUniqueName": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj",
         "projectName": "Csm.JseFeedback.Commonlibrary",
-        "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj",
-        "packagesPath": "C:\\Users\\gurucharan.das\\.nuget\\packages\\",
-        "outputPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Commonlibrary\\obj\\",
+        "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj",
+        "packagesPath": "C:\\Users\\rajan.maravi\\.nuget\\packages\\",
+        "outputPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Commonlibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurucharan.das\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rajan.maravi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -168,6 +213,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -198,6 +244,10 @@
               "target": "Package",
               "version": "[11.7.1, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"
@@ -209,6 +259,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -227,25 +281,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\JSEFeedbackClone\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj": {
+    "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj",
+        "projectUniqueName": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj",
         "projectName": "Csm.JseFeedback.Model",
-        "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj",
-        "packagesPath": "C:\\Users\\gurucharan.das\\.nuget\\packages\\",
-        "outputPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Model\\obj\\",
+        "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj",
+        "packagesPath": "C:\\Users\\rajan.maravi\\.nuget\\packages\\",
+        "outputPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurucharan.das\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rajan.maravi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -254,14 +308,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\JSEFeedbackClone\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj": {
-                "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj"
+              "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj": {
+                "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Commonlibrary\\Csm.JseFeedback.Commonlibrary.csproj"
               }
             }
           }
@@ -275,6 +330,32 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -291,25 +372,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\JSEFeedbackClone\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj": {
+    "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj",
+        "projectUniqueName": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj",
         "projectName": "Csm.JseFeedback.Repository",
-        "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj",
-        "packagesPath": "C:\\Users\\gurucharan.das\\.nuget\\packages\\",
-        "outputPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Repository\\obj\\",
+        "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Repository\\Csm.JseFeedback.Repository.csproj",
+        "packagesPath": "C:\\Users\\rajan.maravi\\.nuget\\packages\\",
+        "outputPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurucharan.das\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rajan.maravi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -318,14 +399,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\JSEFeedbackClone\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj": {
-                "projectPath": "D:\\JSEFeedbackClone\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj"
+              "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj": {
+                "projectPath": "D:\\FEEDBACK SYSTEM\\Project\\Csm.JseFeedback.Model\\Csm.JseFeedback.Model.csproj"
               }
             }
           }
@@ -339,6 +421,56 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.2, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[31.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -355,7 +487,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -18,7 +18,7 @@ namespace Csm.JseFeedback.Repository
         {
             try
             {
-                var procedureName = "USP_Add_User_Details";
+                var procedureName = "USP_Add_User_Detail";
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@FirstName", userModel.FirstName, DbType.String, ParameterDirection.Input);
@@ -26,6 +26,7 @@ namespace Csm.JseFeedback.Repository
                 parameters.Add("@Password", userModel.Password, DbType.String, ParameterDirection.Input);
                 parameters.Add("@MiddleName", userModel.MiddleName, DbType.String, ParameterDirection.Input);
                 parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
+                parameters.Add("@RoleId", userModel.RoleId, DbType.Int32, ParameterDirection.Input);
                 using (var connection = _dbContext.CreateConnection())
                 {
                     return connection.ExecuteScalar<string>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
@@ -109,7 +110,7 @@ namespace Csm.JseFeedback.Repository
                 var parameters = new DynamicParameters();
                 parameters.Add("@EmployeeCode", userModel.EmployeeCode, DbType.String, ParameterDirection.Input);
                 parameters.Add("@RefreshToken", userModel.RefreshToken, DbType.String, ParameterDirection.Input);
-                parameters.Add("@RefreshTokenExpiresOn", userModel.RefreshTokenExpiresOn, DbType.String, ParameterDirection.Input);
+                parameters.Add("@RefreshTokenExpiresOn", userModel.RefreshTokenExpiresOn, DbType.DateTime, ParameterDirection.Input);
                 parameters.Add("@LoggedInUser", userModel.LoggedInUser, DbType.String, ParameterDirection.Input);
                 using (var connection = _dbContext.CreateConnection())
                 {
@@ -169,5 +170,28 @@ namespace Csm.JseFeedback.Repository
             }
 
         }
+
+        public async Task<UserModel> GetRoleByEmployeeCode(string EmployeeCode)
+        {
+            try
+            {
+                var procedureName = "USP_Validate_User_Role";
+                var parameters = new DynamicParameters();
+                parameters.Add("@UserCode", EmployeeCode, DbType.String, ParameterDirection.Input);
+
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    return await connection.QuerySingleOrDefaultAsync<UserModel>(sql: procedureName, param: parameters, commandType: CommandType.StoredProcedure);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserRepository.ValidateUserRole");
+                throw;
+            }
+
+        }
+
     }
 }

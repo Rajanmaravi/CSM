@@ -1,4 +1,5 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Search;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,7 @@ namespace Csm.JseFeedback.Business
         Task<string> AddFeedback(FeedbackDaoModel feedback);
         Task<string> UpdateFeedback(FeedbackDaoModel feedback);
         Task<string> DeleteFeedback(FeedbackDaoModel feedbackModel);
+        Task<JseUserDaoDetailsModel> GetMapRAJseUserDetailsByCode(string internCode);
+        Task<List<AspectDaoModel>> GetAspectDetails();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Dapper;
 using Microsoft.Extensions.Logging;
 using System;
@@ -123,6 +124,44 @@ namespace Csm.JseFeedback.Repository
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Exception BatchRepository.UpdateBatch");
+                throw;
+            }
+        }
+
+        public async Task<List<BatchDetailsDaoModel>> GetBatchList()
+        {
+            try
+            {
+                var procedureName = "USP_GetAll_Batch_Details";
+
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    var result = await connection.QueryAsync<BatchDetailsDaoModel>(sql: procedureName, commandType: CommandType.StoredProcedure);
+                    return result.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in BatchRepository.GetBatchList");
+                throw;
+            }
+        }
+
+        public async Task<List<RaDaoModel>> GetRa()
+        {
+            try
+            {
+                var procedureName = "USP_Get_Ra_Details";
+
+                using (var connection = _dbContext.CreateConnection())
+                {
+                    var result = await connection.QueryAsync<RaDaoModel>(sql: procedureName, commandType: CommandType.StoredProcedure);
+                    return result.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in BatchRepository.GetRa");
                 throw;
             }
         }

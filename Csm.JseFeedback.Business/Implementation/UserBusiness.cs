@@ -111,5 +111,19 @@ namespace Csm.JseFeedback.Business
             }
 
         }
+
+        public async Task<UserModel> GetRoleByEmployeeCode(string loginModel)
+        {
+            try
+            {
+                return await _userRepository.GetRoleByEmployeeCode(loginModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception UserBusiness.ValidateUser");
+                throw;
+            }
+
+        }
     }
 }

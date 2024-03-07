@@ -44,10 +44,12 @@ namespace Csm.JseFeedback.Api.Controllers
                     return BadRequest("Unable to generate access token.Invalid credentials!");
 
                 var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, userDetails.EmployeeCode)
-            //,new Claim(ClaimTypes.Role, "Manager")
-        };
+                {
+                    new Claim(ClaimTypes.Name, userDetails.EmployeeCode),
+                    //,new Claim(ClaimTypes.Role, "Manager")
+                    new Claim(ClaimTypes.Role, userDetails.UserRole)
+                };
+
                 var accessToken = _tokenService.GenerateAccessToken(claims);
                 var refreshToken = _tokenService.GenerateRefreshToken();
                 TokenResponse response = new TokenResponse
@@ -55,7 +57,8 @@ namespace Csm.JseFeedback.Api.Controllers
                     Token = accessToken,
                     RefreshToken = refreshToken,
                     DateOfExpiry = DateTime.Now.AddHours(_configuration["Jwt:TokenValidityInHours"].ParseInt()),
-                    RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt())
+                    RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt()),
+                    UserRole = userDetails.UserRole
                 };
                 userDetails.RefreshToken = response.RefreshToken;
                 userDetails.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
@@ -94,21 +97,29 @@ namespace Csm.JseFeedback.Api.Controllers
                 return BadRequest("Invalid client request");
             var loggedInUser = users.FirstOrDefault();
 
+            UserModel userDetails = new UserModel();
+            if (!string.IsNullOrEmpty(username))
+            {
+                userDetails = await _userBusiness.GetRoleByEmployeeCode(username);
+            }
+
             TokenResponse response = new TokenResponse
             {
                 Token = _tokenService.GenerateAccessToken(principal.Claims),
                 RefreshToken = _tokenService.GenerateRefreshToken(),
                 DateOfExpiry = DateTime.Now.AddHours(_configuration["Jwt:TokenValidityInHours"].ParseInt()),
-                RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt())
+                RefreshTokenExpiryTime = DateTime.Now.AddDays(_configuration["Jwt:RefreshTokenValidityInDays"].ParseInt()),
+                UserRole = userDetails.UserRole
             };
             loggedInUser.RefreshToken = response.RefreshToken;
             loggedInUser.RefreshTokenExpiresOn = response.RefreshTokenExpiryTime;
             await _userBusiness.UpdateRefreshToken(new UserDaoModel 
-                {
-                EmployeeCode=loggedInUser.EmployeeCode,RefreshToken=loggedInUser.RefreshToken,RefreshTokenExpiresOn=loggedInUser.RefreshTokenExpiresOn
-                
-            }
-            );
+            {
+                EmployeeCode=loggedInUser.EmployeeCode,
+                RefreshToken=loggedInUser.RefreshToken,
+                RefreshTokenExpiresOn=loggedInUser.RefreshTokenExpiresOn
+
+            });
 
             return Ok(response);
         }
@@ -123,16 +134,16 @@ namespace Csm.JseFeedback.Api.Controllers
             if (users == null || users.Count() <= 0)
                 return BadRequest("Invalid client request");
             var loggedInUser = users.FirstOrDefault();
+
             loggedInUser.RefreshToken = null;
             loggedInUser.RefreshTokenExpiresOn = null;
             await _userBusiness.UpdateRefreshToken(new UserDaoModel
             {
                 EmployeeCode = loggedInUser.EmployeeCode,
                 RefreshToken = loggedInUser.RefreshToken,
-                RefreshTokenExpiresOn = loggedInUser.RefreshTokenExpiresOn
+                RefreshTokenExpiresOn = loggedInUser.RefreshTokenExpiresOn,
 
-            }
-                       );
+            });
             return NoContent();
         }
     }

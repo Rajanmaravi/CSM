@@ -1,5 +1,7 @@
 ﻿using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -18,7 +20,7 @@ namespace Csm.JseFeedback.Business
             _jseUserRepository = jseUserRepository?? throw new ArgumentNullException(nameof(jseUserRepository));
         }
 
-        public async Task<string> AddJse(JseUserDaoModel jseUser)
+        public async Task<string> AddJse(JseUserAddDaoModel jseUser)
         {
             try
             {
@@ -43,7 +45,7 @@ namespace Csm.JseFeedback.Business
                 _logger.LogError("Exception in JseUserBusiness.UpdateJse");
                 throw;
             }
-}
+        }
 
         public async Task<string> DeleteJse(JseUserDaoModel jseUser)
         {
@@ -58,5 +60,35 @@ namespace Csm.JseFeedback.Business
             }
         }
 
+        public async Task<List<JseUserDaoDetailsModel>> GetJseUserDetails()
+        {
+            try
+            {
+                return await _jseUserRepository.GetJseUserDetails();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in JseUserBusiness.GetJseUserDetails");
+                throw;
+            }
+        }
+
+        public async Task<string> UploadJseData(IFormFile formFile)
+        {
+            return await _jseUserRepository.UploadJseData(formFile);
+        }
+
+        public async Task<List<JseUserDaoDetailsModel>> GetMapRAJseUserDetails()
+        {
+            try
+            {
+                return await _jseUserRepository.GetMapRAJseUserDetails();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception in JseUserBusiness.GetMapRAJseUserDetails");
+                throw;
+            }
+        }
     }
 }

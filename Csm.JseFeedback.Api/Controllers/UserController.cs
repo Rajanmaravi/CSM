@@ -20,7 +20,7 @@ namespace Csm.JseFeedback.Api.Controllers
             
         }
         [HttpPost("Authenticate")]
-        public IActionResult Authenticate(LoginModel loginModel)
+        public IActionResult Authenticate([FromBody] LoginModel loginModel)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace Csm.JseFeedback.Api.Controllers
             }
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(UserDaoModel userModel)
+        public async Task<IActionResult> Create([FromBody] UserDaoModel userModel)
         {
             try
             {

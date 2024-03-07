@@ -1,5 +1,6 @@
 ﻿using Csm.JseFeedback.Business;
 using Csm.JseFeedback.Model;
+using Csm.JseFeedback.Model.Dao;
 using Csm.JseFeedback.Model.Search;
 using Dapper;
 using Microsoft.Extensions.Logging;
@@ -78,6 +79,19 @@ namespace Csm.JseFeedback.Repository
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Exception TechnologyBusiness.UpdateTechnology");
+                throw;
+            }
+        }
+
+        public async Task<List<TechnologyDetailsDaoModel>> GetTechnologyList()
+        {
+            try
+            {
+                return await _technologyRepository.GetTechnologyList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception TechnologyBusiness.GetTechnologyList");
                 throw;
             }
         }

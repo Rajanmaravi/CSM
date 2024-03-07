@@ -16,7 +16,6 @@ namespace Csm.JseFeedback.Repository
         Task<IEnumerable<UserModel>> SearchUser(UserSearchModel userSearch);
         Task<string> ChangePassword(PasswordChangeModel passwordChange);
         Task<string> UpdateRefreshToken(UserDaoModel userModel);
-
-
+        Task<UserModel> GetRoleByEmployeeCode(string employeeCode);
     }
 }

@@ -10,3 +10,51 @@ D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.J
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\refint\Csm.JseFeedback.Commonlibrary.dll
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
 D:\Projects\Csm.JseFeedback\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\ref\Csm.JseFeedback.Commonlibrary.dll
+D:\projecta\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.deps.json
+D:\projecta\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\projecta\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.AssemblyReference.cache
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfoInputs.cache
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfo.cs
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.CoreCompileInputs.cache
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\refint\Csm.JseFeedback.Commonlibrary.dll
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\ref\Csm.JseFeedback.Commonlibrary.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.deps.json
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.AssemblyReference.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.GeneratedMSBuildEditorConfig.editorconfig
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfoInputs.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfo.cs
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.CoreCompileInputs.cache
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\refint\Csm.JseFeedback.Commonlibrary.dll
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+\\server9\15.PUBLIC FOLDER\Bibhuranjan Mohanty L&K\projecta\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\ref\Csm.JseFeedback.Commonlibrary.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.deps.json
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.AssemblyReference.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfoInputs.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfo.cs
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.CoreCompileInputs.cache
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\refint\Csm.JseFeedback.Commonlibrary.dll
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+C:\Users\rajan.maravi\Desktop\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\ref\Csm.JseFeedback.Commonlibrary.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.deps.json
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\bin\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.AssemblyReference.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfoInputs.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.AssemblyInfo.cs
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.csproj.CoreCompileInputs.cache
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\refint\Csm.JseFeedback.Commonlibrary.dll
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\Csm.JseFeedback.Commonlibrary.pdb
+D:\FEEDBACK SYSTEM\Project\Csm.JseFeedback.Commonlibrary\obj\Debug\net6.0\ref\Csm.JseFeedback.Commonlibrary.dll
